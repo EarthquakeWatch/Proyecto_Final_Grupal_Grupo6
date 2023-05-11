@@ -108,19 +108,20 @@ Teniendo en cuenta todos estos factores, optamos con incorporar a Perú a nuestr
 
 ## **Probables KPIs**
 
-Como empresa nos encargamos de elaborar varios KPIS para medir la eficacia, en principio para la elaboración de nuestro proyecto y posteriormente para el seguimiento del mismo una vez puesto en marcha. No está de más volver a aclarar que ésto es solo un análisis temprano, corrrespondiente a la primera visualización de los datos. 
+Como empresa nos encargamos de elaborar varios KPIS para medir la eficacia, en principio para la elaboración de nuestro proyecto y posteriormente para el seguimiento del mismo una vez puesto en marcha. No está de más volver a aclarar que ésto es solo un análisis temprano, corrrespondiente a la 
+primera visualización de los datos. 
 
 Algunos de estos KPIS pueden ser:
 
-Tiempo de respuesta: Mejorar el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente.
+Tiempo de respuesta: Mejorar un 50% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2025.
 
-Tiempo de transmisión: Mejorar el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias.
+Tiempo de transmisión: Mejorar un 100% el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias ppara el añ 2025.
 
-Cobertura geográfica: Mejorar la cantidad de áreas geográficas cubiertas por el sistema de alertas.
+Cobertura geográfica: Mejorar 100% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2025.
 
-Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas.
+Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo en un 100%, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas para el año 2025.
 
-Accesibilidad: Mejorar el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales.
+Accesibilidad: Mejorar 100% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2025.
 
 
 Nos resulta fundamental destacar que si bien hemos planteado algunas posibles métricas, aún es temprano para decidir cuáles serán las más relevantes. Debemos recordar que todavía no disponemos de los datos definitivos, y que estamos en la etapa de análisis y exploración de los mismos.
@@ -129,7 +130,7 @@ Es importante que en este momento nos enfoquemos en comprender en profundidad lo
 
 Por los mismos motivos, tampoco podemos establecer lapsos de tiempo para la implementación de los KPIs definitivos. Es importante que trabajemos en colaboración para asegurarnos de que nuestros objetivos estén claramente definidos y que nuestros esfuerzos se centren en alcanzarlos.
 
-Una vez que dispongamos de los datos definitivos y hayamos avanzado en el análisis, podremos determinar cuáles son los KPIs más relevantes y establecer un plan de acción para implementarlos de manera efectiva en nuestro sistema de alertas. 
+Una vez que dispongamos de los datos definitivos y hayamos avanzado en el análisis, podremos determinar cuáles son los KPIs más relevantes y establecer un plan de acción para implementarlos de manera efectiva en nuestro sistema de alertas.
  
  
 ### Especificaciones del resumen en formato GeoJSON
