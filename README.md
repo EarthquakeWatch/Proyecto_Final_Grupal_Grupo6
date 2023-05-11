@@ -112,15 +112,15 @@ Como empresa nos encargamos de elaborar varios KPIS para medir la eficacia, en p
 
 Algunos de estos KPIS pueden ser:
 
-Tiempo de respuesta: Mejorar un 50% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2025.
+Tiempo de respuesta: Mejorar el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente.
 
-Tiempo de transmisión: Mejorar un 100% el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias ppara el añ 2025.
+Tiempo de transmisión: Mejorar el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias.
 
-Cobertura geográfica: Mejorar 100% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2025.
+Cobertura geográfica: Mejorar la cantidad de áreas geográficas cubiertas por el sistema de alertas.
 
-Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo en un 100%, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas para el año 2025.
+Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas.
 
-Accesibilidad: Mejorar 100% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2025.
+Accesibilidad: Mejorar el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales.
 
 
 Nos resulta fundamental destacar que si bien hemos planteado algunas posibles métricas, aún es temprano para decidir cuáles serán las más relevantes. Debemos recordar que todavía no disponemos de los datos definitivos, y que estamos en la etapa de análisis y exploración de los mismos.
@@ -129,6 +129,182 @@ Es importante que en este momento nos enfoquemos en comprender en profundidad lo
 
 Por los mismos motivos, tampoco podemos establecer lapsos de tiempo para la implementación de los KPIs definitivos. Es importante que trabajemos en colaboración para asegurarnos de que nuestros objetivos estén claramente definidos y que nuestros esfuerzos se centren en alcanzarlos.
 
-Una vez que dispongamos de los datos definitivos y hayamos avanzado en el análisis, podremos determinar cuáles son los KPIs más relevantes y establecer un plan de acción para implementarlos de manera efectiva en nuestro sistema de alertas.
+Una vez que dispongamos de los datos definitivos y hayamos avanzado en el análisis, podremos determinar cuáles son los KPIs más relevantes y establecer un plan de acción para implementarlos de manera efectiva en nuestro sistema de alertas. 
+ 
+ 
+### Especificaciones del resumen en formato GeoJSON
+
+ 
+Descripción: El formato GeoJSON se emplea para codificar distintas estructuras de datos geográficos en los Estados Unidos, como geometrías, características y conjuntos de éstas. Este tipo de archivo se basa en el estándar JSON. Puedes ampliar la información en la página web de GeoJSON.
+
+ 
+Uso: El objetivo de GeoJSON es servir como interfaz programática en diversas aplicaciones. 
+
+
+### Output  
+
+```json
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": Long Integer,
+    "url": String,
+    "title": String,
+    "api": String,
+    "count": Integer,
+    "status": Integer
+  },
+  "bbox": [
+    minimum longitude,
+    minimum latitude,
+    minimum profundidad,
+    maximum longitude,
+    maximum latitude,
+    maximum profundidad
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": Float,
+        "place": object,
+        "time": object,
+        "update": object,
+        "cdi": float,
+        "status": object,
+        "tsunami": int,
+        "sig": int,
+        "ids": object,
+        "nst": float,
+        "dmin": float,
+        "rms": float,
+        "gap": float,
+        "longitud": String,
+        "sources": String,
+        "types": String,
+        "nst": Integer,
+        "dmin": Decimal,
+        "rms": Decimal,
+        "gap": Decimal
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          longitude,
+          latitude,
+          profundidad
+        ]
+      },
+      "id": object
+    }
+  ]
+}
+``` 
+  
+A continuación se muestra la lista de todas las variables que obtenemos de las API de USGS. 
+ 
+** mag ** 
+ 
+- Tipo de datos: float
+ 
+- Descripción: La magnitud del evento. 
+ 
+** place ** 
+ 
+- Tipo de datos: object
+ 
+- Descripción: Descripción textual de la región geográfica nombrada cercana al evento. 
+ 
+** time ** 
+ 
+- Tipo de datos: object
+ 
+- Descripción: Hora en que ocurrió el evento. Indicamos la fecha y hora en que el sismo inicia la ruptura, lo que se conoce como hora "origen". 
+ 
+** updated **   
+ 
+- Tipo de datos: object 
+ 
+- Descripción: Hora en que se actualizó el evento por última vez.
+  
+** cdi **
+  
+- Tipo de datos: float
+
+- Descripción: La máxima intensidad reportada para el evento.  
+ 
+** status ** 
+ 
+- Tipo de datos: object 
+ 
+- Descripción: Indica si el evento ha sido revisado por un humano.
+ 
+** tsunami ** 
+ 
+- Tipo de datos: int 
+
+- Descripción: Indica la posivilidad de tsunami, se representa con 1 cuando hay posivilidad y 0 cuando no. 
+ 
+** sig ** 
+ 
+- Tipo de datos: int 
+ 
+- Descripcion: Un número que describe cuán significativo es el evento. Los números más grandes indican un evento más significativo. Este valor se determina en función de una serie de factores, que incluyen: magnitud, MMI máximo, informes de sensación e impacto estimado. 
+ 
+** nst ** 
+ 
+- Tipo de datos: float
+   
+- Descripción: El número total de estaciones sísmicas utilizadas para determinar la ubicación del terremoto.
+
+** dmin **  
+ 
+- Tipo de datos: float
+   
+- Descripción: Distancia horizontal desde el epicentro hasta la estación más cercana, cuanto menor sea este número, más confiable es la profundidad calculada del terremoto. 
+ 
+** rms ** 
+ 
+- Tipo de datos: float
+   
+- Descripción: Este parámetro proporciona una medida del ajuste de los tiempos de llegada observados a los tiempos de llegada previstos para esta ubicación. Los números más pequeños reflejan un mejor ajuste de los datos. El valor depende de la precisión del modelo de velocidad utilizado para calcular la ubicación del terremoto, los pesos de calidad asignados a los datos de tiempo de llegada y el procedimiento utilizado para localizar el terremoto.  
+ 
+** gap **   
+ 
+- Tipo de datos: float 
+ 
+- Descripción: La mayor brecha azimutal entre estaciones azimutalmente adyacentes (en grados). En general, cuanto más pequeño es este número, más confiable es la posición horizontal calculada del terremoto. Las ubicaciones de terremotos en las que la brecha azimutal supera los 180 grados suelen tener grandes incertidumbres de ubicación y profundidad. 
+ 
+** Longitud **  
+ 
+- Tipo de datos: float 
+ 
+- Descripción: Grados decimales de longitud. Valores negativos para longitudes occidentales.
+   
+- Información adicional: Un terremoto comienza a romperse en un hipocentro que está definido por una posición en la superficie de la tierra (epicentro) y una profundidad por debajo de este punto (profundidad focal). Proporcionamos las coordenadas del epicentro en unidades de latitud y longitud. La latitud es el número de grados al norte (N) o al sur (S) del ecuador y varía de 0 en el ecuador a 90 en los polos. La longitud es el número de grados al este (E) o al oeste (O) del primer meridiano que pasa por Greenwich, Inglaterra. La longitud varía de 0 en Greenwich a 180 y el E o W muestra la dirección desde Greenwich. Las coordenadas se dan en el marco de referencia WGS84. La incertidumbre de la posición del hipocentro varía desde aproximadamente 100 m en horizontal y 300 metros en vertical para los eventos mejor ubicados, aquellos en medio de redes de sismógrafos densamente espaciadas, hasta decenas de kilómetros para eventos globales en muchas partes del mundo.  
+ 
+** Latitud ** 
+ 
+- Tipo de datos: float 
+ 
+- Descripción :Grados decimales de latitud. Valores negativos para latitudes del sur.
+   
+- Información adicional: Un terremoto comienza a romperse en un hipocentro que está definido por una posición en la superficie de la tierra (epicentro) y una profundidad por debajo de este punto (profundidad focal). Proporcionamos las coordenadas del epicentro en unidades de latitud y longitud. La latitud es el número de grados al norte (N) o al sur (S) del ecuador y varía de 0 en el ecuador a 90 en los polos. La longitud es el número de grados al este (E) o al oeste (O) del primer meridiano que pasa por Greenwich, Inglaterra. La longitud varía de 0 en Greenwich a 180 y el E o W muestra la dirección desde Greenwich. Las coordenadas se dan en el marco de referencia WGS84. La incertidumbre de la posición del hipocentro varía desde aproximadamente 100 m en horizontal y 300 metros en vertical para los eventos mejor ubicados, aquellos en medio de redes de sismógrafos densamente espaciadas, hasta decenas de kilómetros para eventos globales en muchas partes del mundo. 
+ 
+** profundidad **  
+ 
+- Tipo de dato: float 
+ 
+- Descripción :Profundidad del evento en kilómetros.
+ 
+- Información Adicional: La profundidad donde el sismo comienza a romperse. Esta profundidad puede ser relativa al geoide WGS84,  
+el nivel medio del mar o la elevación promedio de las estaciones sísmicas que proporcionaron datos de tiempo de llegada para la ubicación del terremoto.  
+La elección de la profundidad de referencia depende del método utilizado para localizar el terremoto,  
+que varía según la red sísmica. Dado que ComCat incluye datos de muchas redes sísmicas diferentes,  
+el proceso para determinar la profundidad es diferente para diferentes eventos.  
+La profundidad es el parámetro menos restringido en la ubicación del terremoto y las barras de error son generalmente más grandes que la variación debido a los diferentes métodos de determinación de la profundidad. A veces, cuando la profundidad está mal restringida por los datos sísmicos disponibles, el programa de ubicación establecerá la profundidad en un valor fijo.  
+Por ejemplo, a menudo se usa 33 km como profundidad predeterminada para terremotos que se determina que son poco profundos,  
+pero cuya profundidad no está determinada satisfactoriamente por los datos, mientras que las profundidades predeterminadas de 5 o 10 km se usan a menudo en áreas continentales medias y en zonas medias. dorsales oceánicas, ya que los terremotos en estas áreas suelen ser de menos de 33 km.
+
 
 
