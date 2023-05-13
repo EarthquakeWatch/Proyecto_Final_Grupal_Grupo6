@@ -5,23 +5,30 @@ import requests  # importa la biblioteca requests que se usa para hacer solicitu
 import json  # importa la biblioteca json que se usa para trabajar con datos JSON.
 import pandas as pd  # importa la biblioteca pandas como pd, que se utiliza para trabajar con marcos de datos.
 import numpy as np  # importa la biblioteca numpy como np, que se utiliza para realizar operaciones matemáticas en matrices y arreglos de datos.
-
-def sismo_usa(url):
-    paramss = {"format": "geojson", "starttime": "1995-01-01", "endtime": "2023-01-01", "minmagnitude": 2.5,
-                "minlatitude": 24.6, "maxlatitude": 50, "minlongitude": -125, "maxlongitude": -65, "limit": 20000}
-    data = requests.get(url, params = paramss)
-    data = json.loads(data.text)
-    return data
-#se define una función llamada sismo_usa que acepta una URL como entrada. La función utiliza la biblioteca requests para hacer 
-#una solicitud HTTP GET a la URL proporcionada, pasando algunos parámetros específicos en la variable paramss. 
-#Luego, la respuesta se analiza como JSON utilizando la biblioteca json y se devuelve.
+from datetime import datetime, timedelta
 
 url = r"https://earthquake.usgs.gov/fdsnws/event/1/query?"
-dic_sismo = sismo_usa(url)
-#se define una URL que apunta al servicio web del USGS que proporciona información sobre terremotos en los Estados Unidos. 
-#Luego, se llama a la función sismo_usa y se le pasa la URL como argumento. El objeto JSON devuelto por la función se almacena 
-#en la variable dic_sismo.
 
-df_sismo = pd.json_normalize(dic_sismo['features'])
-#se utiliza la biblioteca pandas y la función json_normalize para convertir el objeto JSON devuelto por la función sismo_usa 
-# en un DataFrame de pandas. Esto facilita la manipulación y el análisis de los datos.
+filename = 'sismos_usa.json'
+
+def sismo_usa_json(url, filename):
+    # Establecer el tiempo de inicio desde hoy menos 20000 eventos
+    endtime = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
+    starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
+    
+    # Establecer los demás parámetros de solicitud
+    params = {"format": "geojson", "starttime": starttime, "endtime": endtime, "minmagnitude": 2.5,
+                "minlatitude": 24.6, "maxlatitude": 50, "minlongitude": -125, "maxlongitude": -65, "limit": 20000}
+    
+    # Realizar la solicitud a la API de USGS
+    response = requests.get(url, params=params)
+    data = response.json()
+    
+    # Obtener solo las características (features)
+    features = data['features']
+    
+    # Convertir las características a una cadena de texto JSON
+    json_str = json.dumps(features)
+    
+    # Devolver la cadena de texto JSON
+    return json_str

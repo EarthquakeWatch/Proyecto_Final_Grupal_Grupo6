@@ -1,205 +1,274 @@
-id,time,tipo_informacion,num_serie_sismo,Update,Profundidad,mag,intencidad_max,title,nombre_area_epicentral,latitud,longitud
-20230510215351,2023-05-10 21:59:00,anuncio,1,2023-05-10 21:53:00,210,3.7,1,Earthquake and Seismic Intensity Information,Northern Coast of Iwate Prefecture,39.8000000,141.9000000
-20230510215452,2023-05-10 21:58:00,anuncio,1,2023-05-10 21:54:00,495,5.1,3,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230510172938,2023-05-10 17:32:00,anuncio,1,2023-05-10 17:29:00,497,3.0,2,Earthquake and Seismic Intensity Information,Toyama Bay,37.4000000,137.3000000
-20230510112107,2023-05-10 11:24:00,anuncio,1,2023-05-10 11:21:00,341,4.1,3,Earthquake and Seismic Intensity Information,Northwestern Chiba Prefecture,35.7000000,140.0000000
-20230510071441,2023-05-10 07:19:00,anuncio,1,2023-05-10 07:14:00,495,5.0,4,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230510030324,2023-05-10 03:07:00,anuncio,1,2023-05-10 03:02:00,286,4.2,2,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,39.9000000,142.3000000
-20230510025936,2023-05-10 03:02:00,anuncio,1,2023-05-10 02:59:00,390,3.4,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230510024056,2023-05-10 02:43:00,anuncio,1,2023-05-10 02:40:00,741,2.9,2,Earthquake and Seismic Intensity Information,"Kumamoto Region, Kumamoto Prefecture",32.8000000,130.9000000
-20230509231507,2023-05-09 23:18:00,anuncio,1,2023-05-09 23:15:00,497,1.8,1,Earthquake and Seismic Intensity Information,Toyama Bay,37.4000000,137.3000000
-20230509213216,2023-05-09 21:35:00,anuncio,1,2023-05-09 21:32:00,286,3.8,2,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,39.6000000,142.1000000
-20230509132244,2023-05-09 13:26:00,anuncio,1,2023-05-09 13:22:00,285,3.7,2,Earthquake and Seismic Intensity Information,Off the east Coast of Aomori Prefecture,40.9000000,142.0000000
-20230509110558,2023-05-09 11:08:00,anuncio,1,2023-05-09 11:05:00,495,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230509090608,2023-05-09 09:08:00,anuncio,1,2023-05-09 09:06:00,390,2.2,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230509051617,2023-05-09 05:20:00,anuncio,1,2023-05-09 05:16:00,390,4.3,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230509051422,2023-05-09 05:19:00,anuncio,1,2023-05-09 05:14:00,390,4.9,4,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230509024026,2023-05-09 02:42:00,anuncio,1,2023-05-09 02:40:00,850,3.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.4000000,127.4000000
-20230509021501,2023-05-09 02:17:00,anuncio,1,2023-05-09 02:15:00,390,2.9,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230508214339,2023-05-08 21:46:00,anuncio,1,2023-05-08 21:43:00,289,3.4,1,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.3000000,141.1000000
-20230508145631,2023-05-08 14:59:00,anuncio,1,2023-05-08 14:56:00,390,3.8,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230508121605,2023-05-08 12:19:00,anuncio,1,2023-05-08 12:16:00,495,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230508114558,2023-05-08 11:48:00,anuncio,1,2023-05-08 11:45:00,390,3.5,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230508110517,2023-05-08 11:08:00,anuncio,1,2023-05-08 11:05:00,250,3.7,1,Earthquake and Seismic Intensity Information,"Nakadori, Fukushima Prefecture",37.2000000,140.0000000
-20230508094918,2023-05-08 09:52:00,anuncio,1,2023-05-08 09:49:00,497,1.9,1,Earthquake and Seismic Intensity Information,Toyama Bay,37.4000000,137.4000000
-20230507185625,2023-05-07 18:59:00,anuncio,1,2023-05-07 18:56:00,233,2.6,2,Earthquake and Seismic Intensity Information,Southern Inland of Akita Prefecture,39.1000000,140.5000000
-20230507143524,2023-05-07 14:38:00,anuncio,1,2023-05-07 14:35:00,390,2.6,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230507142404,2023-05-07 14:29:00,anuncio,1,2023-05-07 14:24:00,495,2.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.5000000,137.4000000
-20230507141114,2023-05-07 14:13:00,anuncio,1,2023-05-07 14:11:00,495,2.9,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230507133753,2023-05-07 13:40:00,anuncio,1,2023-05-07 13:37:00,390,2.5,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230507114443,2023-05-07 11:47:00,anuncio,1,2023-05-07 11:44:00,495,3.5,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230507031936,2023-05-07 03:21:00,anuncio,1,2023-05-07 03:19:00,390,2.8,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230507030457,2023-05-07 03:07:00,anuncio,1,2023-05-07 03:04:00,390,3.3,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230507011027,2023-05-07 01:12:00,anuncio,1,2023-05-07 01:10:00,390,3.1,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506235404,2023-05-06 23:56:00,anuncio,1,2023-05-06 23:54:00,495,4.1,2,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230506201445,2023-05-06 20:17:00,anuncio,1,2023-05-06 20:14:00,495,2.9,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230506195613,2023-05-06 19:58:00,anuncio,1,2023-05-06 19:56:00,390,2.7,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506125901,2023-05-06 13:01:00,anuncio,1,2023-05-06 12:59:00,793,3.0,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Amami-Oshima Island,28.5000000,129.5000000
-20230506084805,2023-05-06 08:50:00,anuncio,1,2023-05-06 08:48:00,390,3.0,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506064829,2023-05-06 06:51:00,anuncio,1,2023-05-06 06:48:00,390,3.4,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506053123,2023-05-06 05:33:00,anuncio,1,2023-05-06 05:31:00,390,2.7,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230506044432,2023-05-06 04:46:00,anuncio,1,2023-05-06 04:44:00,390,3.1,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230506024725,2023-05-06 02:51:00,anuncio,1,2023-05-06 02:47:00,285,5.5,4,Earthquake and Seismic Intensity Information,Off the east Coast of Aomori Prefecture,41.5000000,142.1000000
-20230506022126,2023-05-06 02:25:00,anuncio,1,2023-05-06 02:21:00,495,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230506014547,2023-05-06 01:49:00,anuncio,1,2023-05-06 01:45:00,390,1.8,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506012512,2023-05-06 01:27:00,anuncio,1,2023-05-06 01:25:00,495,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230506010207,2023-05-06 01:06:00,anuncio,1,2023-05-06 01:02:00,390,3.7,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230506010158,2023-05-06 01:05:00,anuncio,1,2023-05-06 01:01:00,189,4.5,2,Earthquake and Seismic Intensity Information,Off the southeast Coast of the Nemuro Peninsula,43.0000000,146.3000000
-20230506000908,2023-05-06 00:11:00,anuncio,1,2023-05-06 00:09:00,495,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230505234229,2023-05-05 23:45:00,anuncio,1,2023-05-05 23:42:00,390,2.6,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505232653,2023-05-05 23:29:00,anuncio,1,2023-05-05 23:26:00,390,4.0,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505231854,2023-05-05 23:23:00,anuncio,1,2023-05-05 23:18:00,390,4.5,4,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505230711,2023-05-05 23:09:00,anuncio,1,2023-05-05 23:07:00,390,3.7,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505225143,2023-05-05 22:54:00,anuncio,1,2023-05-05 22:51:00,390,3.9,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505224835,2023-05-05 22:51:00,anuncio,1,2023-05-05 22:48:00,390,3.3,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505224640,2023-05-05 22:49:00,anuncio,1,2023-05-05 22:46:00,390,3.6,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505224401,2023-05-05 22:47:00,anuncio,1,2023-05-05 22:44:00,390,2.9,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505223455,2023-05-05 22:38:00,anuncio,1,2023-05-05 22:34:00,390,3.6,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505223402,2023-05-05 22:37:00,anuncio,1,2023-05-05 22:34:00,390,4.1,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505222644,2023-05-05 22:30:00,anuncio,1,2023-05-05 22:26:00,390,4.2,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505220557,2023-05-05 22:12:00,anuncio,1,2023-05-05 22:05:00,390,3.5,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505220841,2023-05-05 22:11:00,anuncio,1,2023-05-05 22:08:00,390,3.8,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505220345,2023-05-05 22:07:00,anuncio,1,2023-05-05 22:03:00,390,4.1,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505220222,2023-05-05 22:05:00,anuncio,1,2023-05-05 22:02:00,390,3.8,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505215807,2023-05-05 22:02:00,anuncio,1,2023-05-05 21:58:00,390,5.8,5+,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505213802,2023-05-05 21:40:00,anuncio,1,2023-05-05 21:38:00,531,2.7,2,Earthquake and Seismic Intensity Information,Southeastern Hyogo Prefecture,34.9000000,135.4000000
-20230505213445,2023-05-05 21:37:00,anuncio,1,2023-05-05 21:34:00,495,3.9,2,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230505212906,2023-05-05 21:31:00,anuncio,1,2023-05-05 21:29:00,390,2.7,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505212502,2023-05-05 21:29:00,anuncio,1,2023-05-05 21:25:00,286,4.5,3,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,39.3000000,142.1000000
-20230505183030,2023-05-05 18:33:00,anuncio,1,2023-05-05 18:30:00,390,2.8,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505182237,2023-05-05 18:26:00,anuncio,1,2023-05-05 18:22:00,390,3.4,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505181533,2023-05-05 18:18:00,anuncio,1,2023-05-05 18:15:00,390,2.9,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505181135,2023-05-05 18:15:00,anuncio,1,2023-05-05 18:11:00,390,2.2,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505174629,2023-05-05 17:49:00,anuncio,1,2023-05-05 17:46:00,390,3.5,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505173804,2023-05-05 17:43:00,anuncio,1,2023-05-05 17:38:00,390,4.3,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505173156,2023-05-05 17:34:00,anuncio,1,2023-05-05 17:31:00,390,2.4,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505170114,2023-05-05 17:03:00,anuncio,1,2023-05-05 17:01:00,495,3.6,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230505163940,2023-05-05 16:41:00,anuncio,1,2023-05-05 16:39:00,390,3.0,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505162431,2023-05-05 16:26:00,anuncio,1,2023-05-05 16:24:00,390,3.4,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505161104,2023-05-05 16:13:00,anuncio,1,2023-05-05 16:11:00,390,3.7,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505160726,2023-05-05 16:09:00,anuncio,1,2023-05-05 16:07:00,390,3.0,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505155840,2023-05-05 16:02:00,anuncio,1,2023-05-05 15:58:00,495,2.5,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.5000000,137.4000000
-20230505154850,2023-05-05 15:51:00,anuncio,1,2023-05-05 15:48:00,390,3.0,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505154058,2023-05-05 15:43:00,anuncio,1,2023-05-05 15:41:00,390,3.3,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505153210,2023-05-05 15:35:00,anuncio,1,2023-05-05 15:32:00,495,2.4,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.4000000
-20230505152915,2023-05-05 15:32:00,anuncio,1,2023-05-05 15:28:00,495,3.2,1,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.5000000,137.0000000
-20230505152744,2023-05-05 15:30:00,anuncio,1,2023-05-05 15:27:00,390,2.6,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505151412,2023-05-05 15:17:00,anuncio,1,2023-05-05 15:14:00,390,3.6,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505150636,2023-05-05 15:09:00,anuncio,1,2023-05-05 15:06:00,495,3.9,2,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230505145729,2023-05-05 15:01:00,anuncio,1,2023-05-05 14:57:00,495,3.6,2,Earthquake and Seismic Intensity Information,Off the Coast of Noto Peninsula,37.6000000,137.3000000
-20230505145340,2023-05-05 14:57:00,anuncio,1,2023-05-05 14:53:00,390,4.7,4,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230505145103,2023-05-05 14:54:00,anuncio,1,2023-05-05 14:51:00,390,3.8,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505144750,2023-05-05 14:52:00,anuncio,1,2023-05-05 14:47:00,390,4.0,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505144206,2023-05-05 14:46:00,anuncio,1,2023-05-05 14:42:00,390,6.3,6+,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230505134802,2023-05-05 13:50:00,anuncio,1,2023-05-05 13:47:00,300,3.3,1,Earthquake and Seismic Intensity Information,Northern Ibaraki Prefecture,36.8000000,140.6000000
-20230505112449,2023-05-05 11:27:00,anuncio,1,2023-05-05 11:24:00,550,2.4,1,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.1000000,135.4000000
-20230504230101,2023-05-04 23:04:00,anuncio,1,2023-05-04 23:01:00,379,3.8,1,Earthquake and Seismic Intensity Information,"Off the Coast of Joetsu and Chuetsu, Niigata Prefecture",37.3000000,137.8000000
-20230504195107,2023-05-04 19:54:00,anuncio,1,2023-05-04 19:51:00,550,2.6,1,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.2000000,135.3000000
-20230503053455,2023-05-03 05:38:00,anuncio,1,2023-05-03 05:34:00,471,4.1,2,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.6000000,141.0000000
-20230503042656,2023-05-03 04:30:00,anuncio,1,2023-05-03 04:26:00,798,2.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.9000000,130.0000000
-20230503011246,2023-05-03 01:15:00,anuncio,1,2023-05-03 01:12:00,252,2.3,1,Earthquake and Seismic Intensity Information,"Aizu,  Fukushima Prefecture",37.1000000,139.4000000
-20230502121339,2023-05-02 12:16:00,anuncio,1,2023-05-02 12:13:00,791,2.8,1,Earthquake and Seismic Intensity Information,Hyuganada Sea,32.6000000,132.0000000
-20230502074809,2023-05-02 07:50:00,anuncio,1,2023-05-02 07:48:00,287,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Miyagi Prefecture,38.9000000,141.8000000
-20230502035626,2023-05-02 03:59:00,anuncio,1,2023-05-02 03:56:00,289,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.8000000,141.7000000
-20230502002030,2023-05-02 00:24:00,anuncio,1,2023-05-02 00:20:00,289,4.0,1,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.8000000,141.8000000
-20230501175634,2023-05-01 17:59:00,anuncio,1,2023-05-01 17:56:00,798,2.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.9000000,130.0000000
-20230501165955,2023-05-01 17:03:00,anuncio,1,2023-05-01 16:59:00,850,5.4,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.1000000,128.7000000
-20230501160953,2023-05-01 16:13:00,anuncio,1,2023-05-01 16:09:00,798,2.7,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.8000000,130.1000000
-20230501153517,2023-05-01 15:38:00,anuncio,1,2023-05-01 15:35:00,390,2.7,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230501134351,2023-05-01 13:46:00,anuncio,1,2023-05-01 13:43:00,850,2.8,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.6000000,127.9000000
-20230501130246,2023-05-01 13:06:00,anuncio,1,2023-05-01 13:02:00,850,5.0,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,25.9000000,128.6000000
-20230501125640,2023-05-01 13:01:00,anuncio,1,2023-05-01 12:56:00,798,2.3,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.9000000,130.0000000
-20230501125639,2023-05-01 12:59:00,anuncio,1,2023-05-01 12:56:00,289,4.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.7000000,141.6000000
-20230501125104,2023-05-01 12:55:00,anuncio,1,2023-05-01 12:51:00,850,4.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.1000000,128.9000000
-20230501122224,2023-05-01 12:26:00,anuncio,1,2023-05-01 12:22:00,850,6.2,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.0000000,128.8000000
-20230501112243,2023-05-01 11:27:00,anuncio,1,2023-05-01 11:22:00,850,5.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.0000000,128.7000000
-20230501085830,2023-05-01 09:03:00,anuncio,1,2023-05-01 08:58:00,192,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Urakawa,42.0000000,142.4000000
-20230501085104,2023-05-01 08:55:00,anuncio,1,2023-05-01 08:51:00,471,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.2000000,141.2000000
-20230501071514,2023-05-01 07:18:00,anuncio,1,2023-05-01 07:15:00,600,3.4,2,Earthquake and Seismic Intensity Information,Northern Tokushima Prefecture,34.0000000,134.2000000
-20230501050428,2023-05-01 05:08:00,anuncio,1,2023-05-01 05:04:00,471,4.2,3,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.4000000,140.8000000
-20230501045904,2023-05-01 05:03:00,anuncio,1,2023-05-01 04:58:00,911,3.8,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,27.0000000,142.6000000
-20230501013713,2023-05-01 01:40:00,anuncio,1,2023-05-01 01:37:00,793,3.3,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Amami-Oshima Island,27.6000000,128.8000000
-20230430234815,2023-04-30 23:51:00,anuncio,1,2023-04-30 23:48:00,798,2.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.9000000,130.0000000
-20230430212152,2023-04-30 21:25:00,anuncio,1,2023-04-30 21:21:00,473,4.2,1,Earthquake and Seismic Intensity Information,Off the east Coast of Chiba Prefecture,35.6000000,141.0000000
-20230430203645,2023-04-30 20:41:00,anuncio,1,2023-04-30 20:36:00,252,2.3,2,Earthquake and Seismic Intensity Information,"Aizu,  Fukushima Prefecture",37.1000000,139.3000000
-20230430185235,2023-04-30 18:55:00,anuncio,1,2023-04-30 18:52:00,431,3.7,3,Earthquake and Seismic Intensity Information,"Eastern Mino, Gifu Prefecture",35.6000000,137.2000000
-20230430062335,2023-04-30 06:27:00,anuncio,1,2023-04-30 06:23:00,252,2.2,2,Earthquake and Seismic Intensity Information,"Aizu,  Fukushima Prefecture",37.1000000,139.4000000
-20230430011925,2023-04-30 01:22:00,anuncio,1,2023-04-30 01:19:00,390,3.0,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230430004942,2023-04-30 00:53:00,anuncio,1,2023-04-30 00:49:00,850,4.5,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.0000000,128.8000000
-20230429091618,2023-04-29 09:18:00,anuncio,1,2023-04-29 09:16:00,784,3.5,2,Earthquake and Seismic Intensity Information,Amakusanada Sea,32.4000000,129.9000000
-20230429045446,2023-04-29 04:57:00,anuncio,1,2023-04-29 04:54:00,600,3.1,1,Earthquake and Seismic Intensity Information,Northern Tokushima Prefecture,34.0000000,133.9000000
-20230429021642,2023-04-29 02:19:00,anuncio,1,2023-04-29 02:16:00,784,3.6,2,Earthquake and Seismic Intensity Information,Amakusanada Sea,32.4000000,129.9000000
-20230428164605,2023-04-28 16:49:00,anuncio,1,2023-04-28 16:46:00,192,4.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Urakawa,42.0000000,142.6000000
-20230428134906,2023-04-28 13:52:00,anuncio,1,2023-04-28 13:49:00,321,2.4,1,Earthquake and Seismic Intensity Information,Southern Gunma Prefecture,36.5000000,139.4000000
-20230428093855,2023-04-28 09:42:00,anuncio,1,2023-04-28 09:38:00,107,3.0,3,Earthquake and Seismic Intensity Information,"Western Oshima Region, Hokkaido",41.5000000,140.2000000
-20230428070902,2023-04-28 07:12:00,anuncio,1,2023-04-28 07:09:00,850,4.3,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.4000000,128.3000000
-20230427224313,2023-04-27 22:46:00,anuncio,1,2023-04-27 22:43:00,289,4.2,2,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.0000000,141.2000000
-20230427164353,2023-04-27 16:47:00,anuncio,1,2023-04-27 16:43:00,850,5.4,2,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.1000000,128.7000000
-20230427104044,2023-04-27 10:43:00,anuncio,1,2023-04-27 10:40:00,192,3.6,1,Earthquake and Seismic Intensity Information,Off the Coast of Urakawa,41.6000000,142.0000000
-20230427094010,2023-04-27 09:42:00,anuncio,1,2023-04-27 09:40:00,471,3.1,1,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.1000000,140.8000000
-20230427041729,2023-04-27 04:20:00,anuncio,1,2023-04-27 04:17:00,301,3.5,2,Earthquake and Seismic Intensity Information,Southern Ibaraki Prefecture,36.1000000,140.1000000
-20230426165246,2023-04-26 16:55:00,anuncio,1,2023-04-26 16:52:00,192,3.9,1,Earthquake and Seismic Intensity Information,Off the Coast of Urakawa,42.1000000,142.5000000
-20230426024944,2023-04-26 02:53:00,anuncio,1,2023-04-26 02:49:00,289,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.7000000,141.7000000
-20230425223206,2023-04-25 22:36:00,anuncio,1,2023-04-25 22:32:00,286,4.1,2,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,40.0000000,142.0000000
-20230425220002,2023-04-25 22:03:00,anuncio,1,2023-04-25 21:59:00,550,2.9,2,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.0000000,135.3000000
-20230425143158,2023-04-25 14:35:00,anuncio,1,2023-04-25 14:32:00,252,2.5,2,Earthquake and Seismic Intensity Information,"Aizu,  Fukushima Prefecture",37.0000000,139.4000000
-20230425083155,2023-04-25 08:34:00,anuncio,1,2023-04-25 08:31:00,791,2.6,1,Earthquake and Seismic Intensity Information,Hyuganada Sea,32.3000000,132.2000000
-20230425002958,2023-04-25 00:33:00,anuncio,1,2023-04-25 00:29:00,432,2.6,1,Earthquake and Seismic Intensity Information,"Central and western Mino, Gifu Prefecture",35.4000000,136.9000000
-20230424173602,2023-04-24 17:39:00,anuncio,1,2023-04-24 17:36:00,785,2.7,1,Earthquake and Seismic Intensity Information,Ariake Sea,32.8000000,130.6000000
-20230424113544,2023-04-24 11:38:00,anuncio,1,2023-04-24 11:35:00,550,2.6,2,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.0000000,135.3000000
-20230424063322,2023-04-24 06:37:00,anuncio,1,2023-04-24 06:33:00,911,4.3,2,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,26.4000000,141.9000000
-20230424062211,2023-04-24 06:25:00,anuncio,1,2023-04-24 06:22:00,622,3.6,1,Earthquake and Seismic Intensity Information,"Nanyo,  Ehime Prefecture",33.5000000,132.7000000
-20230424010957,2023-04-24 01:13:00,anuncio,1,2023-04-24 01:09:00,471,3.5,1,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.7000000,141.1000000
-20230424004252,2023-04-24 00:46:00,anuncio,1,2023-04-24 00:42:00,287,3.8,1,Earthquake and Seismic Intensity Information,Off the Coast of Miyagi Prefecture,37.9000000,141.7000000
-20230423234505,2023-04-23 23:48:00,anuncio,1,2023-04-23 23:45:00,252,1.8,1,Earthquake and Seismic Intensity Information,"Aizu,  Fukushima Prefecture",37.0000000,139.3000000
-20230423214559,2023-04-23 21:48:00,anuncio,1,2023-04-23 21:45:00,550,2.8,2,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.0000000,135.3000000
-20230423122956,2023-04-23 12:33:00,anuncio,1,2023-04-23 12:29:00,580,2.7,1,Earthquake and Seismic Intensity Information,Northern Okayama Prefecture,34.9000000,134.0000000
-20230422205419,2023-04-22 20:57:00,anuncio,1,2023-04-22 20:54:00,390,2.5,2,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230422194244,2023-04-22 19:45:00,anuncio,1,2023-04-22 19:42:00,193,2.4,2,Earthquake and Seismic Intensity Information,Off the Coast of Tomakomai,41.8000000,141.2000000
-20230422143035,2023-04-22 14:34:00,anuncio,1,2023-04-22 14:30:00,471,3.4,2,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.4000000,140.7000000
-20230422104137,2023-04-22 10:44:00,anuncio,1,2023-04-22 10:41:00,289,4.2,2,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.2000000,141.4000000
-20230422011013,2023-04-22 01:13:00,anuncio,1,2023-04-22 01:10:00,854,4.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Ishigakijima Island,24.9000000,123.5000000
-20230421214307,2023-04-21 21:46:00,anuncio,1,2023-04-21 21:43:00,286,3.9,1,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,40.3000000,142.5000000
-20230421202533,2023-04-21 20:28:00,anuncio,1,2023-04-21 20:25:00,287,3.6,1,Earthquake and Seismic Intensity Information,Off the Coast of Miyagi Prefecture,38.7000000,141.9000000
-20230421171617,2023-04-21 17:19:00,anuncio,1,2023-04-21 17:16:00,432,3.2,2,Earthquake and Seismic Intensity Information,"Central and western Mino, Gifu Prefecture",35.4000000,136.8000000
-20230421162004,2023-04-21 16:23:00,anuncio,1,2023-04-21 16:20:00,911,5.6,4,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,27.0000000,141.5000000
-20230421134642,2023-04-21 13:51:00,anuncio,1,2023-04-21 13:46:00,422,1.5,1,Earthquake and Seismic Intensity Information,Southern Nagano Prefecture,36.0000000,137.6000000
-20230421030723,2023-04-21 03:10:00,anuncio,1,2023-04-21 03:07:00,511,2.5,1,Earthquake and Seismic Intensity Information,Southern Kyoto Prefecture,35.0000000,135.5000000
-20230420123316,2023-04-20 12:36:00,anuncio,1,2023-04-20 12:33:00,390,3.3,3,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.3000000
-20230420094226,2023-04-20 09:46:00,anuncio,1,2023-04-20 09:42:00,911,4.4,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,26.9000000,141.5000000
-20230420022326,2023-04-20 02:26:00,anuncio,1,2023-04-20 02:23:00,674,2.8,1,Earthquake and Seismic Intensity Information,Kiisuido Strait,34.0000000,135.1000000
-20230419093800,2023-04-19 09:40:00,anuncio,1,2023-04-19 09:37:00,390,3.2,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230418215615,2023-04-18 22:00:00,anuncio,1,2023-04-18 21:56:00,798,2.0,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.8000000,129.9000000
-20230418170322,2023-04-18 17:06:00,anuncio,1,2023-04-18 17:03:00,850,3.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Okinawa Main Island,26.7000000,127.8000000
-20230417143651,2023-04-17 14:39:00,anuncio,1,2023-04-17 14:36:00,289,3.5,1,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.5000000,141.4000000
-20230417071623,2023-04-17 07:20:00,anuncio,1,2023-04-17 07:16:00,422,3.3,3,Earthquake and Seismic Intensity Information,Southern Nagano Prefecture,36.0000000,137.6000000
-20230417022515,2023-04-17 02:29:00,anuncio,1,2023-04-17 02:25:00,289,4.6,4,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.2000000,141.4000000
-20230417004550,2023-04-17 00:49:00,anuncio,1,2023-04-17 00:45:00,741,3.5,3,Earthquake and Seismic Intensity Information,"Kumamoto Region, Kumamoto Prefecture",32.7000000,130.6000000
-20230416204825,2023-04-16 20:51:00,anuncio,1,2023-04-16 20:48:00,820,3.1,1,Earthquake and Seismic Intensity Information,Off the east Coast of Osumi Peninsula,31.5000000,131.5000000
-20230416174209,2023-04-16 17:45:00,anuncio,1,2023-04-16 17:42:00,798,2.3,1,Earthquake and Seismic Intensity Information,Adjacent Sea of Tokara Islands,29.9000000,130.1000000
-20230416151441,2023-04-16 15:17:00,anuncio,1,2023-04-16 15:14:00,674,3.4,1,Earthquake and Seismic Intensity Information,Kiisuido Strait,33.7000000,135.1000000
-20230415114100,2023-04-15 11:44:00,anuncio,1,2023-04-15 11:41:00,286,4.4,2,Earthquake and Seismic Intensity Information,Off the Coast of Iwate Prefecture,39.1000000,142.4000000
-20230415092346,2023-04-15 09:26:00,anuncio,1,2023-04-15 09:23:00,189,3.7,2,Earthquake and Seismic Intensity Information,Off the southeast Coast of the Nemuro Peninsula,43.1000000,145.6000000
-20230415072520,2023-04-15 07:28:00,anuncio,1,2023-04-15 07:25:00,473,3.0,1,Earthquake and Seismic Intensity Information,Off the east Coast of Chiba Prefecture,35.8000000,140.9000000
-20230415005934,2023-04-15 01:02:00,anuncio,1,2023-04-15 00:59:00,580,3.1,2,Earthquake and Seismic Intensity Information,Northern Okayama Prefecture,35.1000000,133.4000000
-20230415005323,2023-04-15 00:56:00,anuncio,1,2023-04-15 00:53:00,190,3.3,1,Earthquake and Seismic Intensity Information,Off the Coast of Kushiro,42.9000000,145.5000000
-20230414111043,2023-04-14 11:13:00,anuncio,1,2023-04-14 11:10:00,289,3.8,1,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.6000000,141.5000000
-20230414100425,2023-04-14 10:07:00,anuncio,1,2023-04-14 10:04:00,911,4.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,27.0000000,141.5000000
-20230414030843,2023-04-14 03:11:00,anuncio,1,2023-04-14 03:08:00,371,2.5,2,Earthquake and Seismic Intensity Information,"Chuetsu, Niigata Prefecture",36.8000000,138.7000000
-20230414023638,2023-04-14 02:39:00,anuncio,1,2023-04-14 02:36:00,390,3.1,1,Earthquake and Seismic Intensity Information,"Noto, Ishikawa Prefecture",37.5000000,137.2000000
-20230413233338,2023-04-13 23:36:00,anuncio,1,2023-04-13 23:33:00,451,3.4,1,Earthquake and Seismic Intensity Information,Western Aichi Prefecture,35.3000000,136.9000000
-20230413222453,2023-04-13 22:28:00,anuncio,1,2023-04-13 22:24:00,911,4.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,26.9000000,142.7000000
-20230413153552,2023-04-13 15:39:00,anuncio,1,2023-04-13 15:35:00,191,3.5,1,Earthquake and Seismic Intensity Information,Off the Coast of Tokachi,42.6000000,143.8000000
-20230413081302,2023-04-13 08:16:00,anuncio,1,2023-04-13 08:13:00,186,3.7,1,Earthquake and Seismic Intensity Information,Adjacent Kunashiri Island,43.5000000,145.9000000
-20230413065448,2023-04-13 06:57:00,anuncio,1,2023-04-13 06:54:00,550,2.4,2,Earthquake and Seismic Intensity Information,Northern Wakayama Prefecture,34.0000000,135.3000000
-20230413052904,2023-04-13 05:32:00,anuncio,1,2023-04-13 05:29:00,471,3.6,2,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.2000000,140.9000000
-20230412174603,2023-04-12 17:49:00,anuncio,1,2023-04-12 17:46:00,289,4.1,3,Earthquake and Seismic Intensity Information,Off the Coast of Fukushima Prefecture,37.1000000,141.2000000
-20230412163731,2023-04-12 16:40:00,anuncio,1,2023-04-12 16:37:00,471,2.8,1,Earthquake and Seismic Intensity Information,Off the Coast of Ibaraki Prefecture,36.4000000,140.8000000
-20230412152020,2023-04-12 15:22:00,anuncio,1,2023-04-12 15:20:00,300,3.1,1,Earthquake and Seismic Intensity Information,Northern Ibaraki Prefecture,36.6000000,140.4000000
-20230412125458,2023-04-12 12:59:00,anuncio,1,2023-04-12 12:54:00,570,3.9,3,Earthquake and Seismic Intensity Information,Eastern Shimane Prefecture,35.2000000,132.7000000
-20230412051829,2023-04-12 05:21:00,anuncio,1,2023-04-12 05:18:00,432,2.7,1,Earthquake and Seismic Intensity Information,"Central and western Mino, Gifu Prefecture",35.8000000,137.1000000
-20230412051100,2023-04-12 05:14:00,anuncio,1,2023-04-12 05:10:00,341,3.8,2,Earthquake and Seismic Intensity Information,Northwestern Chiba Prefecture,35.7000000,140.1000000
-20230412004502,2023-04-12 00:48:00,anuncio,1,2023-04-12 00:44:00,911,4.2,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,27.0000000,141.6000000
-20230412003824,2023-04-12 00:41:00,anuncio,1,2023-04-12 00:38:00,191,4.3,2,Earthquake and Seismic Intensity Information,Off the Coast of Tokachi,42.6000000,143.8000000
-20230411091008,2023-04-11 09:14:00,anuncio,1,2023-04-11 09:09:00,911,4.5,1,Earthquake and Seismic Intensity Information,Adjacent Sea of​ Chichijima Island,27.0000000,142.7000000
-20230411045618,2023-04-11 05:00:00,anuncio,1,2023-04-11 04:56:00,371,2.3,1,Earthquake and Seismic Intensity Information,"Chuetsu, Niigata Prefecture",37.4000000,138.8000000
+time,mag,intensidad_max,latitud,longitud,profundidad
+2023-05-14 02:22:00,4.5,1,26.7,142.6,20
+2023-05-14 02:06:00,2.0,1,29.9,130.0,0
+2023-05-14 00:39:00,2.5,1,29.9,130.0,10
+2023-05-14 00:14:00,3.1,3,29.9,130.0,10
+2023-05-14 00:13:00,3.1,0,29.9,130.0,10
+2023-05-13 23:02:00,1.9,1,29.9,130.0,10
+2023-05-13 22:14:00,2.2,1,29.9,130.0,10
+2023-05-13 19:55:00,2.3,1,30.0,129.9,10
+2023-05-13 19:51:00,1.9,1,30.0,130.0,10
+2023-05-13 19:48:00,2.5,1,37.5,137.1,10
+2023-05-13 19:04:00,2.5,2,29.9,130.0,10
+2023-05-13 18:10:00,5.1,0,2955.6,13000.9,12
+2023-05-13 18:01:00,2.0,1,29.9,130.0,20
+2023-05-13 17:54:00,2.3,1,29.9,130.0,10
+2023-05-13 17:42:00,2.3,1,29.9,130.1,0
+2023-05-13 17:34:00,2.1,1,29.9,130.1,10
+2023-05-13 17:31:00,2.9,2,30.0,130.0,10
+2023-05-13 17:19:00,3.1,1,29.9,130.0,10
+2023-05-13 17:05:00,2.0,1,29.9,130.0,10
+2023-05-13 16:56:00,2.3,1,29.9,130.0,10
+2023-05-13 16:50:00,2.8,1,35.5,139.0,20
+2023-05-13 16:37:00,2.4,1,29.9,130.0,10
+2023-05-13 16:35:00,2.0,1,30.0,130.0,10
+2023-05-13 16:23:00,2.8,2,29.9,129.9,20
+2023-05-13 16:19:00,2.8,2,29.9,130.0,10
+2023-05-13 16:17:00,3.4,3,29.9,130.0,20
+2023-05-13 16:14:00,5.1,5,29.9,130.0,10
+2023-05-13 16:13:00,5.1,0,29.9,130.0,10
+2023-05-13 05:28:00,3.1,1,37.6,137.3,10
+2023-05-13 00:40:00,2.5,1,30.0,130.0,10
+2023-05-13 00:35:00,3.1,1,33.5,132.4,40
+2023-05-12 21:54:00,4.2,3,33.5,132.4,40
+2023-05-12 21:49:00,4.2,3,33.5,132.4,40
+2023-05-12 21:47:00,4.2,0,33.5,132.4,40
+2023-05-12 21:17:00,2.6,1,37.5,137.3,10
+2023-05-12 20:53:00,3.2,1,34.0,134.2,50
+2023-05-12 17:59:00,2.7,1,37.5,137.3,10
+2023-05-12 17:43:00,3.2,2,37.5,137.3,10
+2023-05-12 15:37:00,2.4,1,29.9,130.1,10
+2023-05-12 15:09:00,3.8,1,35.6,139.3,140
+2023-05-12 12:35:00,2.8,1,40.0,140.5,10
+2023-05-12 09:42:00,2.9,1,37.2,140.1,10
+2023-05-12 06:29:00,2.9,1,37.5,137.3,10
+2023-05-12 05:52:00,2.4,1,37.5,137.3,10
+2023-05-11 22:53:00,4.6,1,24.3,125.2,30
+2023-05-11 22:37:00,6.1,3,24.2,125.2,0
+2023-05-11 22:36:00,6.1,0,24.2,125.2,0
+2023-05-11 19:53:00,2.1,1,36.4,138.1,0
+2023-05-11 19:44:00,3.8,2,35.9,140.6,40
+2023-05-11 19:03:00,3.2,1,27.4,128.7,40
+2023-05-11 18:56:00,5.4,4,42.3,143.0,50
+2023-05-11 18:55:00,5.4,0,42.3,143.0,50
+2023-05-11 15:43:00,2.3,1,37.4,137.3,10
+2023-05-11 14:52:00,2.0,1,29.7,129.8,10
+2023-05-11 12:48:00,2.5,2,29.9,130.0,10
+2023-05-11 12:39:00,3.1,2,29.9,130.0,10
+2023-05-11 12:16:00,3.0,1,29.9,130.0,20
+2023-05-11 12:14:00,4.4,4,29.9,130.0,20
+2023-05-11 12:14:00,4.4,0,29.9,130.0,20
+2023-05-11 07:01:00,3.4,2,37.6,137.2,10
+2023-05-11 06:15:00,5.2,0,3510.2,14011.1,40
+2023-05-11 04:20:00,5.4,5,35.2,140.2,40
+2023-05-11 04:19:00,5.4,0,35.2,140.2,40
+2023-05-11 01:31:00,7.6,0,15.6,174.6,210
+2023-05-10 21:59:00,3.7,1,39.8,141.9,60
+2023-05-10 21:58:00,5.1,3,37.6,137.3,10
+2023-05-10 21:57:00,5.1,0,37.6,137.3,10
+2023-05-10 17:32:00,3.0,2,37.4,137.3,10
+2023-05-10 11:24:00,4.1,3,35.7,140.0,70
+2023-05-10 11:23:00,4.1,0,35.7,140.0,70
+2023-05-10 07:19:00,5.0,4,37.6,137.3,10
+2023-05-10 07:18:00,5.0,0,37.6,137.3,10
+2023-05-10 03:07:00,4.2,2,39.9,142.3,30
+2023-05-10 03:02:00,3.4,1,37.5,137.3,10
+2023-05-10 02:43:00,2.9,2,32.8,130.9,10
+2023-05-09 23:18:00,1.8,1,37.4,137.3,0
+2023-05-09 21:35:00,3.8,2,39.6,142.1,50
+2023-05-09 13:26:00,3.7,2,40.9,142.0,60
+2023-05-09 11:08:00,4.3,2,37.6,137.3,10
+2023-05-09 09:08:00,2.2,1,37.5,137.3,10
+2023-05-09 05:20:00,4.3,3,37.5,137.3,10
+2023-05-09 05:19:00,4.9,4,37.5,137.3,10
+2023-05-09 05:17:00,4.9,0,37.5,137.3,10
+2023-05-09 02:42:00,3.4,1,26.4,127.4,50
+2023-05-09 02:17:00,2.9,1,37.5,137.3,10
+2023-05-08 21:46:00,3.4,1,37.3,141.1,30
+2023-05-08 14:59:00,3.8,2,37.5,137.3,10
+2023-05-08 12:19:00,3.1,1,37.6,137.3,10
+2023-05-08 11:48:00,3.5,2,37.5,137.3,10
+2023-05-08 11:08:00,3.7,1,37.2,140.0,120
+2023-05-08 09:52:00,1.9,1,37.4,137.4,10
+2023-05-07 18:59:00,2.6,2,39.1,140.5,10
+2023-05-07 14:38:00,2.6,1,37.5,137.3,10
+2023-05-07 14:29:00,2.1,1,37.5,137.4,10
+2023-05-07 14:13:00,2.9,1,37.6,137.3,10
+2023-05-07 13:40:00,2.5,1,37.5,137.3,10
+2023-05-07 11:47:00,3.5,1,37.6,137.3,10
+2023-05-07 03:21:00,2.8,1,37.5,137.3,10
+2023-05-07 03:07:00,3.3,2,37.5,137.2,10
+2023-05-07 01:12:00,3.1,1,37.5,137.3,10
+2023-05-06 23:56:00,4.1,2,37.6,137.3,10
+2023-05-06 20:17:00,2.9,1,37.6,137.3,10
+2023-05-06 19:58:00,2.7,1,37.5,137.3,10
+2023-05-06 13:01:00,3.0,1,28.5,129.5,10
+2023-05-06 08:50:00,3.0,2,37.5,137.3,10
+2023-05-06 06:51:00,3.4,1,37.5,137.3,10
+2023-05-06 05:33:00,2.7,1,37.5,137.2,10
+2023-05-06 04:46:00,3.1,1,37.5,137.2,10
+2023-05-06 02:51:00,5.5,4,41.5,142.1,70
+2023-05-06 02:50:00,5.5,0,41.5,142.1,70
+2023-05-06 02:25:00,3.1,1,37.6,137.3,10
+2023-05-06 01:49:00,1.8,1,37.5,137.3,10
+2023-05-06 01:27:00,3.1,1,37.6,137.3,10
+2023-05-06 01:06:00,3.7,2,37.5,137.3,10
+2023-05-06 01:05:00,4.5,2,43.0,146.3,30
+2023-05-06 00:11:00,3.1,1,37.6,137.3,10
+2023-05-05 23:50:00,5.9,0,3731.5,13714.1,14
+2023-05-05 23:45:00,2.6,1,37.5,137.2,10
+2023-05-05 23:29:00,4.0,2,37.5,137.3,10
+2023-05-05 23:23:00,4.5,4,37.5,137.2,10
+2023-05-05 23:22:00,4.5,0,37.5,137.2,10
+2023-05-05 23:09:00,3.7,2,37.5,137.3,10
+2023-05-05 22:54:00,3.9,3,37.5,137.3,10
+2023-05-05 22:51:00,3.3,2,37.5,137.3,10
+2023-05-05 22:49:00,3.6,3,37.5,137.2,10
+2023-05-05 22:48:00,3.6,0,37.5,137.2,10
+2023-05-05 22:47:00,2.9,1,37.5,137.3,10
+2023-05-05 22:38:00,3.6,2,37.5,137.2,10
+2023-05-05 22:37:00,4.1,3,37.5,137.3,10
+2023-05-05 22:30:00,4.2,3,37.5,137.2,10
+2023-05-05 22:29:00,4.2,0,37.5,137.2,10
+2023-05-05 22:12:00,3.5,2,37.5,137.3,10
+2023-05-05 22:11:00,3.8,3,37.5,137.2,10
+2023-05-05 22:07:00,4.1,2,37.5,137.2,10
+2023-05-05 22:05:00,3.8,2,37.5,137.2,10
+2023-05-05 22:02:00,5.8,5,37.5,137.2,10
+2023-05-05 22:01:00,5.8,0,37.5,137.2,10
+2023-05-05 21:40:00,2.7,2,34.9,135.4,10
+2023-05-05 21:37:00,3.9,2,37.6,137.3,10
+2023-05-05 21:31:00,2.7,1,37.5,137.3,10
+2023-05-05 21:29:00,4.5,3,39.3,142.1,50
+2023-05-05 21:27:00,4.5,0,39.3,142.1,50
+2023-05-05 18:33:00,2.8,1,37.5,137.3,10
+2023-05-05 18:26:00,3.4,2,37.5,137.3,10
+2023-05-05 18:18:00,2.9,1,37.5,137.3,10
+2023-05-05 18:15:00,2.2,1,37.5,137.3,10
+2023-05-05 17:49:00,3.5,2,37.5,137.3,10
+2023-05-05 17:43:00,4.3,3,37.5,137.2,10
+2023-05-05 17:42:00,4.3,0,37.5,137.2,10
+2023-05-05 17:34:00,2.4,1,37.5,137.3,10
+2023-05-05 17:03:00,3.6,1,37.6,137.3,10
+2023-05-05 16:41:00,3.0,1,37.5,137.3,10
+2023-05-05 16:40:00,6.5,0,3732.3,13718.2,12
+2023-05-05 16:26:00,3.4,1,37.5,137.3,0
+2023-05-05 16:13:00,3.7,2,37.5,137.3,10
+2023-05-05 16:09:00,3.0,1,37.5,137.2,10
+2023-05-05 16:02:00,2.5,1,37.5,137.4,10
+2023-05-05 15:51:00,3.0,1,37.5,137.3,10
+2023-05-05 15:43:00,3.3,2,37.5,137.3,10
+2023-05-05 15:35:00,2.4,1,37.6,137.4,10
+2023-05-05 15:32:00,3.2,1,37.5,137.0,10
+2023-05-05 15:30:00,2.6,1,37.5,137.3,10
+2023-05-05 15:17:00,3.6,2,37.5,137.3,10
+2023-05-05 15:09:00,3.9,2,37.6,137.3,10
+2023-05-05 15:01:00,3.6,2,37.6,137.3,10
+2023-05-05 14:57:00,4.7,4,37.5,137.2,10
+2023-05-05 14:54:00,3.8,1,37.5,137.3,10
+2023-05-05 14:52:00,4.0,3,37.5,137.3,10
+2023-05-05 14:46:00,6.3,6,37.5,137.3,10
+2023-05-05 14:45:00,6.3,0,37.5,137.3,10
+2023-05-05 13:50:00,3.3,1,36.8,140.6,10
+2023-05-05 11:27:00,2.4,1,34.1,135.4,10
+2023-05-04 23:04:00,3.8,1,37.3,137.8,20
+2023-05-04 19:54:00,2.6,1,34.2,135.3,0
+2023-05-03 05:38:00,4.1,2,36.6,141.0,40
+2023-05-03 04:30:00,2.2,1,29.9,130.0,10
+2023-05-03 01:15:00,2.3,1,37.1,139.4,10
+2023-05-02 12:16:00,2.8,1,32.6,132.0,20
+2023-05-02 07:50:00,3.1,1,38.9,141.8,80
+2023-05-02 03:59:00,4.3,2,37.8,141.7,60
+2023-05-02 00:24:00,4.0,1,37.8,141.8,60
+2023-05-01 17:59:00,2.4,1,29.9,130.0,10
+2023-05-01 17:03:00,5.4,2,26.1,128.7,10
+2023-05-01 16:13:00,2.7,2,29.8,130.1,0
+2023-05-01 15:38:00,2.7,1,37.5,137.3,10
+2023-05-01 13:46:00,2.8,1,26.6,127.9,20
+2023-05-01 13:06:00,5.0,1,25.9,128.6,10
+2023-05-01 13:01:00,2.3,1,29.9,130.0,10
+2023-05-01 12:59:00,4.1,1,37.7,141.6,60
+2023-05-01 12:55:00,4.4,1,26.1,128.9,10
+2023-05-01 12:26:00,6.2,2,26.0,128.8,10
+2023-05-01 11:27:00,5.2,1,26.0,128.7,10
+2023-05-01 09:03:00,4.3,2,42.0,142.4,60
+2023-05-01 08:55:00,4.3,2,36.2,141.2,10
+2023-05-01 07:18:00,3.4,2,34.0,134.2,50
+2023-05-01 05:08:00,4.2,3,36.4,140.8,50
+2023-05-01 05:07:00,4.2,0,36.4,140.8,50
+2023-05-01 05:03:00,3.8,1,27.0,142.6,70
+2023-05-01 01:40:00,3.3,2,27.6,128.8,10
+2023-04-30 23:51:00,2.4,1,29.9,130.0,0
+2023-04-30 21:25:00,4.2,1,35.6,141.0,40
+2023-04-30 20:41:00,2.3,2,37.1,139.3,0
+2023-04-30 18:55:00,3.7,3,35.6,137.2,0
+2023-04-30 18:55:00,3.7,0,35.6,137.2,0
+2023-04-30 06:27:00,2.2,2,37.1,139.4,10
+2023-04-30 01:22:00,3.0,1,37.5,137.3,10
+2023-04-30 00:53:00,4.5,1,26.0,128.8,10
+2023-04-29 09:18:00,3.5,2,32.4,129.9,10
+2023-04-29 04:57:00,3.1,1,34.0,133.9,40
+2023-04-29 02:19:00,3.6,2,32.4,129.9,10
+2023-04-28 16:49:00,4.1,1,42.0,142.6,70
+2023-04-28 13:52:00,2.4,1,36.5,139.4,10
+2023-04-28 09:42:00,3.0,3,41.5,140.2,10
+2023-04-28 07:12:00,4.3,2,26.4,128.3,40
+2023-04-27 22:46:00,4.2,2,37.0,141.2,50
+2023-04-27 16:47:00,5.4,2,26.1,128.7,10
+2023-04-27 10:43:00,3.6,1,41.6,142.0,50
+2023-04-27 09:42:00,3.1,1,36.1,140.8,20
+2023-04-27 04:20:00,3.5,2,36.1,140.1,50
+2023-04-26 16:55:00,3.9,1,42.1,142.5,70
+2023-04-26 02:53:00,4.3,2,37.7,141.7,60
+2023-04-25 22:36:00,4.1,2,40.0,142.0,50
+2023-04-25 22:03:00,2.9,2,34.0,135.3,10
+2023-04-25 14:35:00,2.5,2,37.0,139.4,10
+2023-04-25 08:34:00,2.6,1,32.3,132.2,10
+2023-04-25 00:33:00,2.6,1,35.4,136.9,10
+2023-04-24 17:39:00,2.7,1,32.8,130.6,0
+2023-04-24 11:38:00,2.6,2,34.0,135.3,10
+2023-04-24 06:37:00,4.3,2,26.4,141.9,40
+2023-04-24 06:25:00,3.6,1,33.5,132.7,40
+2023-04-24 01:13:00,3.5,1,36.7,141.1,50
+2023-04-24 00:46:00,3.8,1,37.9,141.7,70
+2023-04-23 23:48:00,1.8,1,37.0,139.3,0
+2023-04-23 21:48:00,2.8,2,34.0,135.3,10
+2023-04-23 12:33:00,2.7,1,34.9,134.0,10
+2023-04-22 20:57:00,2.5,2,37.5,137.3,10
+2023-04-22 19:45:00,2.4,2,41.8,141.2,0
+2023-04-22 14:34:00,3.4,2,36.4,140.7,50
+2023-04-22 10:44:00,4.2,2,37.2,141.4,20
+2023-04-22 01:13:00,4.4,1,24.9,123.5,100
+2023-04-21 21:46:00,3.9,1,40.3,142.5,50
+2023-04-21 20:28:00,3.6,1,38.7,141.9,60
+2023-04-21 17:19:00,3.2,2,35.4,136.8,10
+2023-04-21 16:23:00,5.6,4,27.0,141.5,10
+2023-04-21 16:22:00,5.6,0,27.0,141.5,10
+2023-04-21 13:51:00,1.5,1,36.0,137.6,10
+2023-04-21 03:10:00,2.5,1,35.0,135.5,10
+2023-04-20 12:36:00,3.3,3,37.5,137.3,10
+2023-04-20 12:35:00,3.3,0,37.5,137.3,10
+2023-04-20 09:46:00,4.4,1,26.9,141.5,0
+2023-04-20 02:26:00,2.8,1,34.0,135.1,10
+2023-04-19 09:40:00,3.2,1,37.5,137.2,10
+2023-04-18 22:00:00,2.0,1,29.8,129.9,10
+2023-04-18 17:06:00,3.2,1,26.7,127.8,50
+2023-04-17 14:39:00,3.5,1,37.5,141.4,50
+2023-04-17 07:20:00,3.3,3,36.0,137.6,10
+2023-04-17 07:19:00,3.3,0,36.0,137.6,10
+2023-04-17 02:29:00,4.6,4,37.2,141.4,50
+2023-04-17 02:28:00,4.6,0,37.2,141.4,50
+2023-04-17 00:49:00,3.5,3,32.7,130.6,10
+2023-04-17 00:48:00,3.5,0,32.7,130.6,10
+2023-04-16 20:51:00,3.1,1,31.5,131.5,40
+2023-04-16 17:45:00,2.3,1,29.9,130.1,0
+2023-04-16 15:17:00,3.4,1,33.7,135.1,40
+2023-04-15 11:44:00,4.4,2,39.1,142.4,50
+2023-04-15 09:26:00,3.7,2,43.1,145.6,50
+2023-04-15 07:28:00,3.0,1,35.8,140.9,0
+2023-04-15 01:02:00,3.1,2,35.1,133.4,10
+2023-04-15 00:56:00,3.3,1,42.9,145.5,40
+2023-04-14 19:21:00,7.0,0,6.0,112.0,590
+2023-04-14 11:13:00,3.8,1,37.6,141.5,60
+2023-04-14 10:07:00,4.2,1,27.0,141.5,0
+2023-04-14 03:11:00,2.5,2,36.8,138.7,10

@@ -123,7 +123,6 @@ Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los n
 
 Accesibilidad: Mejorar 100% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2025.
 
-
 Nos resulta fundamental destacar que si bien hemos planteado algunas posibles métricas, aún es temprano para decidir cuáles serán las más relevantes. Debemos recordar que todavía no disponemos de los datos definitivos, y que estamos en la etapa de análisis y exploración de los mismos.
 
 Es importante que en este momento nos enfoquemos en comprender en profundidad los datos, identificar patrones y características relevantes, y desarrollar modelos de análisis que nos permitan obtener información valiosa para la toma de decisiones.

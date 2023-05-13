@@ -10,3 +10,13 @@ def get_japon_quake_data():  # define una función llamada get_japon_quake_data(
     data = response.json()  # utiliza el método json() para convertir el objeto de respuesta HTTP en un objeto JSON de Python.
     df_japon = pd.DataFrame(data)  # convierte el objeto JSON en un marco de datos de Pandas llamado df_japon.
     return df_japon  # devuelve el marco de datos df_japon desde la función get_japon_quake_data().
+
+
+
+url = 'https://www.jma.go.jp/bosai/quake/data/list.json'
+response = requests.get(url)
+
+data = response.json()
+
+with open('japon_quake_data.json', 'w') as outfile: 
+    json.dump(data, outfile)
