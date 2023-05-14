@@ -34,7 +34,7 @@ def sismo_usa_json(url):
 
 
 
-def sismo_usa_json(url, filename):
+def sismo_usa_json_etl(url, filename):
     # Establecer el tiempo de inicio desde hoy menos 20000 eventos
     endtime = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
