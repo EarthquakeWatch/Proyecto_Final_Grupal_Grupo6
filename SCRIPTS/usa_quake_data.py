@@ -7,11 +7,12 @@ import pandas as pd  # importa la biblioteca pandas como pd, que se utiliza para
 import numpy as np  # importa la biblioteca numpy como np, que se utiliza para realizar operaciones matemáticas en matrices y arreglos de datos.
 from datetime import datetime, timedelta
 import sys
-import display
+# form display import display
 
 url = r"https://earthquake.usgs.gov/fdsnws/event/1/query?"
 
-filename = 'USA_data.json'
+# filename = 'USA_data.json'
+filename = 'USA_data.csv'
 
 def sismo_usa_json(url):
     # Establecer el tiempo de inicio desde hoy menos 20000 eventos
@@ -78,13 +79,15 @@ def sismo_usa_json_etl(url, filename, format):
                                         "Profundidad": "Profundidad (km)"})
     
     # Guardar el DataFrame en un archivo JSON
-    df_sismo.to_json(path_or_buf= '../DASHBOARD/CSV_ORIGINAL' + filename, orient="records")
+    # df_sismo.to_json(path_or_buf= '../DASHBOARD/CSV_ORIGINAL' + filename, orient="records")
     
     # Devolver el DataFrame
-    return df_sismo
+    return df_sismo.to_csv(path_or_buf= '../DASHBOARD/CSV_ORIGINAL' + filename, index=False)
 
+sismo_usa_json(url, filename)
 if __name__ == '__main__':
-    #Probando sismos_usa_json_etl()
-    if sys.argv != 3:
-        display(f"Error {sys.argv} != <nombre.py> url filename")
-        sys.exit
+    url = r"https://earthquake.usgs.gov/fdsnws/event/1/query?"
+
+# filename = 'USA_data.json'
+    filename = 'USA_data.csv'
+    sismo_usa_json(url, filename)
