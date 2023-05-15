@@ -6,6 +6,8 @@ import json  # importa la biblioteca json que se usa para trabajar con datos JSO
 import pandas as pd  # importa la biblioteca pandas como pd, que se utiliza para trabajar con marcos de datos.
 import numpy as np  # importa la biblioteca numpy como np, que se utiliza para realizar operaciones matemáticas en matrices y arreglos de datos.
 from datetime import datetime, timedelta
+import sys
+import display
 
 url = r"https://earthquake.usgs.gov/fdsnws/event/1/query?"
 
@@ -34,7 +36,8 @@ def sismo_usa_json(url):
 
 
 
-def sismo_usa_json_etl(url, filename):
+def sismo_usa_json_etl(url, filename, format):
+    
     # Establecer el tiempo de inicio desde hoy menos 20000 eventos
     endtime = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
     starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
@@ -53,10 +56,6 @@ def sismo_usa_json_etl(url, filename):
     # Convertir las características a un DataFrame
     df_sismo = pd.json_normalize(features)
     
-    # Seleccionar las columnas necesarias
-    df_sismo = df_sismo[["properties.mag", "properties.time", "properties.updated", "properties.tz",
-                         "properties.place", "properties.type", "geometry.coordinates"]]
-    
     # Transformar las columnas de tiempo
     df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
     df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
@@ -64,10 +63,11 @@ def sismo_usa_json_etl(url, filename):
     # Dividir la columna geometry.coordinates en columnas separadas
     df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
     
-    # Seleccionar las columnas necesarias
-    df_sismo = df_sismo[["properties.mag", "properties.time", "properties.updated", "properties.place",
-                         "Longitud", "Latitud", "Profundidad"]]
+    df_sismo.drop(columns=[])
     
+    df_sismo.drop(columns=['type',"properties.tz",'properties.tz', 'properties.code','properties.url',
+                           'properties.detail','properties.alert', 'properties.status','properties.types','properties.sources','properties.magType',
+                           'properties.type', 'properties.title', 'geometry.type'], axis=1, inplace=True)
     # Renombrar las columnas
     df_sismo = df_sismo.rename(columns={"properties.mag": "Magnitud",
                                         "properties.time": "Primer Registro",
@@ -78,8 +78,13 @@ def sismo_usa_json_etl(url, filename):
                                         "Profundidad": "Profundidad (km)"})
     
     # Guardar el DataFrame en un archivo JSON
-    df_sismo.to_json(path_or_buf= '../JSON/CON_ETL/' +filename, orient="records")
+    df_sismo.to_json(path_or_buf= '../DASHBOARD/CSV_ORIGINAL' + filename, orient="records")
     
     # Devolver el DataFrame
     return df_sismo
 
+if __name__ == '__main__':
+    #Probando sismos_usa_json_etl()
+    if sys.argv != 3:
+        display(f"Error {sys.argv} != <nombre.py> url filename")
+        sys.exit

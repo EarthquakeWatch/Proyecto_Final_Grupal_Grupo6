@@ -3,6 +3,7 @@
 
 import requests  # importa la biblioteca requests que se usa para hacer solicitudes HTTP a una URL.
 import pandas as pd  # importa la biblioteca pandas como pd, que se utiliza para trabajar con marcos de datos.
+from datetime import datetime, timedelta
 
 url= 'https://www.jma.go.jp/bosai/quake/data/list.json'  # define la URL de donde se va a extraer los datos.
 
