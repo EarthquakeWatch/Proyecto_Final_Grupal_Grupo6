@@ -5,55 +5,90 @@ from datetime import datetime, timedelta
 #[-18.521, 0.132] Latitude
 #[-84.419, -68.599] Longitude
 
-def usgs_peru_json_raw(url, filename, format=None):
+
+def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
+    """
+    Función para obtener datos de sismos de la API de USGS y guardarlos en un archivo CSV.
     
+    Args:
+        url (str): URL de la API de USGS.
+        filename (str): Nombre del archivo CSV de salida.
+        pais (str): País para filtrar los sismos.
+        format (str, optional): Formato de los datos. Por defecto, None.
+        alertlevel (bool, optional): Indicador para concatenar todas las alertas. Por defecto, None.
+    
+    Returns:
+        DataFrame: DataFrame con los datos de los sismos.
+    """
     # Establecer el tiempo de inicio desde hoy menos 20000 eventos
     endtime = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
-    starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
+    # starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
+    starttime = (datetime.today() - timedelta(days=50*365)).strftime('%Y-%m-%dT%H:%M:%S')
     
-    # Establecer los demás parámetros de solicitud
-    params = {"format": "geojson", "starttime": starttime, "endtime": endtime, "minmagnitude": 2.5,
-                "minlatitude": -18.521, "maxlatitude": 0.132, "minlongitude": -84.419, "maxlongitude": -68.599, "limit": 20000}
+    # Definir los límites geográficos según el país
+    dic = {
+        "peru": {"minlatitude": -18.521, "maxlatitude": 0.132, "minlongitude": -84.419, "maxlongitude": -68.599},
+        "usa": {"minlatitude": 24.6, "maxlatitude": 50, "minlongitude": -125, "maxlongitude": -65},
+        "japon": {"minlatitude": 24.40, "maxlatitude": 45, "minlongitude": 122.93, "maxlongitude": 153.99}
+    }
+    values = dic[pais]
+    minlatitude = values["minlatitude"]
+    maxlatitude = values["maxlatitude"]
+    minlongitude = values["minlongitude"]
+    maxlongitude = values["maxlongitude"]
     
-    # Realizar la solicitud a la API de USGS
-    response = requests.get(url, params=params)
-    data = response.json()
+    # Configurar los parámetros de la solicitud
+    params = {
+        "format": "geojson", "starttime": starttime, "endtime": endtime, "minmagnitude": 2.5,
+        "minlatitude": minlatitude, "maxlatitude": maxlatitude, "minlongitude": minlongitude,
+        "maxlongitude": maxlongitude, "limit": 20000
+    }
     
-    # Obtener solo las características (features)
-    features = data['features']
+    if alertlevel:
+        # Obtener los niveles de alerta disponibles
+        alert_levels = ["green", "yellow", "orange", "red"]
+        dfs = []
+        
+        for level in alert_levels:
+            params["alertlevel"] = level
+            response = requests.get(url, params=params)
+            data = response.json()
+            features = data['features']
+            df_sismo = pd.json_normalize(features)
+            df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
+            df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
+            df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
+            dfs.append(df_sismo)
+
+        # Combinar todos los DataFrames de los niveles de alerta
+        df_sismo = pd.concat(dfs)
     
-    # Convertir las características a un DataFrame
-    df_sismo = pd.json_normalize(features)
-    
-    # Transformar las columnas de tiempo
-    df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
-    df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
-    
-    # Dividir la columna geometry.coordinates en columnas separadas
-    df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
-    
-    # df_sismo.drop(columns=[])
-    
-    # df_sismo.drop(columns=['type',"properties.tz",'properties.tz', 'properties.code','properties.url',
-    #                        'properties.detail','properties.alert', 'properties.status','properties.types','properties.sources','properties.magType',
-    #                        'properties.type', 'properties.title', 'geometry.type'], axis=1, inplace=True)
-    # Renombrar las columnas
-    # df_sismo = df_sismo.rename(columns={"properties.mag": "Magnitud",
-    #                                     "properties.time": "Primer Registro",
-    #                                     "properties.updated": "Último Registro",
-    #                                     "properties.place": "Ubicación",
-    #                                     "Longitud": "Longitud (grados)",
-    #                                     "Latitud": "Latitud (grados)",
-    #                                     "Profundidad": "Profundidad (km)"})
-    
-    # Guardar el DataFrame en un archivo JSON
-    # df_sismo.to_json(path_or_buf= '../DASHBOARD/CSV_ORIGINAL/' + filename, orient="records")
-    
-    # Devolver el DataFrame
-    return df_sismo.to_csv(path_or_buf= '../DASHBOARD/CSV_ORIGINAL/' + filename, index=False)
+    else:
+        # Realizar la solicitud a la API de USGS sin niveles de alerta como parametro condicional
+        response = requests.get(url, params=params)
+        data = response.json()
+        features = data['features']
+        df_sismo = pd.json_normalize(features)
+        df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
+        df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
+        df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
+
+    # Guardad el DataFrame en un archivo CSV
+    df_sismo.to_csv(path_or_buf='../DASHBOARD/CSV_ORIGINAL/' + filename, index=False)
+    return df_sismo
 
 url = r'https://earthquake.usgs.gov/fdsnws/event/1/query?'
-filename = 'raw_usgs_peru.csv'
 
-usgs_peru_json_raw(url, filename)
+# usgs_json_raw(url, 'raw_alert_usa.csv', "usa", alertlevel=True)
+usgs_json_raw(url, 'raw_alert_japon.csv', "japon", alertlevel=True)
+
+# Limit to events with a specific PAGER alert level. The allowed values are:
+# alertlevel=green
+# Limit to events with PAGER alert level "green".
+# alertlevel=yellow
+# Limit to events with PAGER alert level "yellow".
+# alertlevel=orange
+# Limit to events with PAGER alert level "orange".
+# alertlevel=red
+# Limit to events with PAGER alert level "red".
 
