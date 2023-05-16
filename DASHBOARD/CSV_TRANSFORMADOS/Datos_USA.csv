@@ -1,4 +1,4 @@
-id,Magnitud,Primer reg,Ultimo registro,properties.felt,cdi,mmi,Posibilidad tsunami,Importancia del evento,id,ns,Dist Horizontal epicentro,properties.rms,Brecha azimutal,estado,Longitud,Latitud,Profundidad
+id,Magnitud,Primer reg,Ultimo registro,properties.felt,cdi,mmi,Posibilidad tsunami,Importancia del evento,ids,ns,Dist Horizontal epicentro,properties.rms,Brecha azimutal,estado,Longitud,Latitud,Profundidad
 us6000kbl9,2.5,2023-05-13 00:22:34.350,2023-05-13 01:02:32.040,,,,0,96,",us6000kbl9,",10.0,0.46,0.51,119.0,Kansas,-99.4995,39.2354,3.69
 nn00859459,2.8,2023-05-12 22:29:14.464,2023-05-12 23:43:48.040,,,,0,121,",us6000kbkj,nn00859459,",14.0,0.22,0.1563,64.37,Nevada,-118.9145,38.4022,11.5
 nc73887311,2.91,2023-05-12 20:57:31.130,2023-05-12 23:55:14.063,,,,0,130,",nc73887311,us6000kbjl,",24.0,0.1092,0.11,182.0,California,-121.2613297,35.7476654,3.66
