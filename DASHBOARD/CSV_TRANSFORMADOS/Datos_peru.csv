@@ -1,4 +1,4 @@
-fecha UTC;hora UTC;latitud (º);longitud (º);profundidad (km);magnitud (M)
+fecha;hora;latitud;longitud;profundidad;magnitud
 02/01/1980;22:27:13.00;-10.983;-79.235;25;5.5
 02/01/1980;22:30:30.00;-10.832;-79.007;48;5.6
 02/01/1980;23:08:28.00;-10.996;-79.135;29;5.4
