@@ -45,9 +45,15 @@ def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
     
     # Configurar los parámetros de la solicitud
     params = {
-        "format": "geojson", "starttime": starttime, "endtime": endtime, "minmagnitude": 2.5,
-        "minlatitude": minlatitude, "maxlatitude": maxlatitude, "minlongitude": minlongitude,
-        "maxlongitude": maxlongitude, "limit": 20000
+        "format": "geojson",
+        "starttime": starttime,
+        "endtime": endtime,
+        "minmagnitude": 2.5,
+        "minlatitude": minlatitude,
+        "maxlatitude": maxlatitude,
+        "minlongitude": minlongitude,
+        "maxlongitude": maxlongitude,
+        "limit": 20000
     }
     dfs = []
     if alertlevel:
@@ -88,7 +94,7 @@ def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
 
     # Guardad el DataFrame en un archivo CSV
     # df_sismo.to_csv(path_or_buf='../DASHBOARD/CSV_ORIGINAL/' + filename, index=False)
-    df_sismo.to_csv(path_or_buf='../MACHINE_LEARNING/' + filename, index=False)
+    # df_sismo.to_csv(path_or_buf='../MACHINE_LEARNING/' + filename, index=False)
     display(df_sismo.shape)
     return df_sismo
 
