@@ -1,10 +1,16 @@
 import requests  # importa la biblioteca requests que se usa para hacer solicitudes HTTP a una URL.
 import pandas as pd  # importa la biblioteca pandas como pd, que se utiliza para trabajar con marcos de datos.
 from datetime import datetime, timedelta
-#Peru
-#[-18.521, 0.132] Latitude
-#[-84.419, -68.599] Longitude
-
+from IPython.display import display
+# Limit to events with a specific PAGER alert level. The allowed values are:
+# alertlevel=green
+# Limit to events with PAGER alert level "green".
+# alertlevel=yellow
+# Limit to events with PAGER alert level "yellow".
+# alertlevel=orange
+# Limit to events with PAGER alert level "orange".
+# alertlevel=red
+# Limit to events with PAGER alert level "red".
 
 def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
     """
@@ -22,8 +28,8 @@ def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
     """
     # Establecer el tiempo de inicio desde hoy menos 20000 eventos
     endtime = datetime.today().strftime('%Y-%m-%dT%H:%M:%S')
-    # starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
-    starttime = (datetime.today() - timedelta(days=50*365)).strftime('%Y-%m-%dT%H:%M:%S')
+    starttime = (datetime.today() - timedelta(days=20000)).strftime('%Y-%m-%dT%H:%M:%S')
+    # starttime = (datetime.today() - timedelta(days=50*365)).strftime('%Y-%m-%dT%H:%M:%S')
     
     # Definir los límites geográficos según el país
     dic = {
@@ -43,11 +49,10 @@ def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
         "minlatitude": minlatitude, "maxlatitude": maxlatitude, "minlongitude": minlongitude,
         "maxlongitude": maxlongitude, "limit": 20000
     }
-    
+    dfs = []
     if alertlevel:
         # Obtener los niveles de alerta disponibles
         alert_levels = ["green", "yellow", "orange", "red"]
-        dfs = []
         
         for level in alert_levels:
             params["alertlevel"] = level
@@ -59,36 +64,36 @@ def usgs_json_raw(url, filename, pais, format=None, alertlevel=None):
             df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
             df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
             dfs.append(df_sismo)
-
-        # Combinar todos los DataFrames de los niveles de alerta
-        df_sismo = pd.concat(dfs)
-    
     else:
         # Realizar la solicitud a la API de USGS sin niveles de alerta como parametro condicional
-        response = requests.get(url, params=params)
-        data = response.json()
-        features = data['features']
-        df_sismo = pd.json_normalize(features)
-        df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
-        df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
-        df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
+        for _ in range(8):
+            response = requests.get(url, params=params)
+            data = response.json()
+            features = data['features']
+            df_sismo = pd.json_normalize(features)
+            df_sismo["properties.time"] = pd.to_datetime(df_sismo["properties.time"], unit="ms")
+            df_sismo["properties.updated"] = pd.to_datetime(df_sismo["properties.updated"], unit="ms")
+            df_sismo[["Longitud", "Latitud", "Profundidad"]] = pd.DataFrame(df_sismo["geometry.coordinates"].tolist())
+            # Concatenar los nuevos datos al DataFrame existente
+            dfs.append(df_sismo)
+            display(df_sismo["properties.time"].min())
+            # Obtener el valor mínimo de 'properties.time' en el DataFrame actual
+            min_time = df_sismo["properties.time"].min()
+            # Convertir el valor mínimo en formato de fecha y hora
+            new_endttime = min_time.strftime('%Y-%m-%dT%H:%M:%S')
+            # Actualizar el parámetro 'starttime' en los parámetros de solicitud
+            params["endtime"] = new_endttime
+        # Combinar todos los DataFrames
+        df_sismo = pd.concat(dfs)
 
     # Guardad el DataFrame en un archivo CSV
-    df_sismo.to_csv(path_or_buf='../DASHBOARD/CSV_ORIGINAL/' + filename, index=False)
+    # df_sismo.to_csv(path_or_buf='../DASHBOARD/CSV_ORIGINAL/' + filename, index=False)
+    df_sismo.to_csv(path_or_buf='../MACHINE_LEARNING/' + filename, index=False)
+    display(df_sismo.shape)
     return df_sismo
 
 url = r'https://earthquake.usgs.gov/fdsnws/event/1/query?'
 
 # usgs_json_raw(url, 'raw_alert_usa.csv', "usa", alertlevel=True)
-usgs_json_raw(url, 'raw_alert_japon.csv', "japon", alertlevel=True)
-
-# Limit to events with a specific PAGER alert level. The allowed values are:
-# alertlevel=green
-# Limit to events with PAGER alert level "green".
-# alertlevel=yellow
-# Limit to events with PAGER alert level "yellow".
-# alertlevel=orange
-# Limit to events with PAGER alert level "orange".
-# alertlevel=red
-# Limit to events with PAGER alert level "red".
-
+# usgs_json_raw(url, 'raw_alert_japon.csv', "japon", alertlevel=True)
+usgs_json_raw(url, 'raw_usa.csv', "usa", alertlevel=None)
