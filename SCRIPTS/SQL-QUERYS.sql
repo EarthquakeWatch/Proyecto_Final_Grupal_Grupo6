@@ -1,47 +1,81 @@
+DROP DATABASE IF EXISTS sismos;
+CREATE DATABASE IF NOT EXISTS sismos;
 USE sismos;
 
 DROP TABLE IF EXISTS  USA;
-CREATE TABLE IF NOT EXISTS USA(
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-Codigo VARCHAR(250) NOT NULL,
-Magnitud FLOAT,
-place VARCHAR(250),
-Fecha_Hora DATE NOT NULL,
-updated DATE NOT NULL,
-cdi FLOAT,
-status VARCHAR(250),
-tsunami INT,
-sig INT,
-ids VARCHAR(250),
-nst FLOAT,
-dmin FLOAT,
-rms FLOAT,
-gap FLOAT,
-Longitud DOUBLE,
-Latitud DOUBLE,
-Profundidad FLOAT
+CREATE TABLE IF NOT EXISTS USA (
+  id VARCHAR(200) NOT NULL,
+  Magnitud FLOAT NOT NULL,
+  properties_place VARCHAR(200),
+  Primer_reg VARCHAR(200) NOT NULL,
+  Ultimo_registro VARCHAR(200) NOT NULL,
+  properties_felt FLOAT,
+  cdi FLOAT,
+  mmi FLOAT,
+  alert VARCHAR(200),
+  Posibilidad_tsunami INT NOT NULL,
+  Importancia_evento INT NOT NULL,
+  ids VARCHAR(200),
+  nst FLOAT,
+  Dist_Horizontal_epicentro FLOAT,
+  properties_rms FLOAT,
+  Brecha_azimutal FLOAT,
+  properties_type VARCHAR(200),
+  geometry_type VARCHAR(200),
+  Longitud FLOAT NOT NULL,
+  Latitud FLOAT NOT NULL,
+  Profundidad FLOAT NOT NULL,
+  estado VARCHAR(200)
 );
 
 
+
+
 DROP TABLE IF EXISTS  JAPON;
-CREATE TABLE IF NOT EXISTS JAPON(
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-Fecha_Hora DATE NOT NULL,
-Latitud DOUBLE,
-Longitud DOUBLE,
-profundidad FLOAT,
-Magnitud FLOAT,
-Ubicacion VARCHAR(250)
+CREATE TABLE IF NOT EXISTS JAPON (
+  id VARCHAR(200),
+  Magnitud FLOAT,
+  Ubicación VARCHAR(200),
+  `Primer Registro` VARCHAR(200),
+  `Último Registro` VARCHAR(200),
+  `properties.felt` FLOAT,
+  `properties.cdi` FLOAT,
+  `properties.mmi` FLOAT,
+  `properties.tsunami` INT,
+  `properties.sig` INT,
+  `properties.net` VARCHAR(200),
+  `properties.ids` VARCHAR(200),
+  `properties.nst` FLOAT,
+  `properties.dmin` FLOAT,
+  `properties.rms` FLOAT,
+  `properties.gap` FLOAT,
+  `geometry.coordinates` VARCHAR(200),
+  `Longitud (grados)` FLOAT,
+  `Latitud (grados)` FLOAT,
+  `Profundidad (km)` FLOAT
 );
 
 
 DROP TABLE IF EXISTS  PERU;
-CREATE TABLE IF NOT EXISTS PERU(
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-Fecha_Hora DATE NOT NULL,
-Latitud DOUBLE,
-Longitud DOUBLE,
-profundidad FLOAT,
-Magnitud FLOAT
+CREATE TABLE IF NOT EXISTS Peru (
+  id VARCHAR(200),
+  Magnitud FLOAT,
+  `properties.place` VARCHAR(200),
+  `Primer reg` VARCHAR(200),
+  `Ultimo registro` VARCHAR(200),
+  felt FLOAT,
+  cdi FLOAT,
+  mmi FLOAT,
+  `Posibilidad tsunami` INT,
+  `Importancia del evento` INT,
+  nst FLOAT,
+  `Dist Horizontal epicentro` FLOAT,
+  RMS FLOAT,
+  `Brecha azimutal` FLOAT,
+  Longitud FLOAT,
+  Latitud FLOAT,
+  Profundidad FLOAT,
+  Pais VARCHAR(200)
 );
+
 
