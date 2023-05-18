@@ -113,15 +113,15 @@ primera visualización de los datos.
 
 Algunos de estos KPIS pueden ser:
 
-Tiempo de respuesta: Mejorar un 50% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2025.
+Tiempo de respuesta: Mejorar un 25% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2024.
 
-Tiempo de transmisión: Mejorar un 100% el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias ppara el añ 2025.
+Tiempo de transmisión: Mejorar un 25% el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias ppara el añ 2024.
 
-Cobertura geográfica: Mejorar 100% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2025.
+Cobertura geográfica: Mejorar 25% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2024.
 
-Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo en un 100%, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas para el año 2025.
+Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo en un 25%, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas para el año 2024.
 
-Accesibilidad: Mejorar 100% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2025.
+Accesibilidad: Mejorar 50% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2024.
 
 Nos resulta fundamental destacar que si bien hemos planteado algunas posibles métricas, aún es temprano para decidir cuáles serán las más relevantes. Debemos recordar que todavía no disponemos de los datos definitivos, y que estamos en la etapa de análisis y exploración de los mismos.
 
