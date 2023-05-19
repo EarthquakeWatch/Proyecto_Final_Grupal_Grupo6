@@ -8,7 +8,7 @@ import numpy as np  # importa la biblioteca numpy como np, que se utiliza para r
 from datetime import datetime, timedelta
 import os
 import sys
-# form display import display
+
 
 url = r"https://earthquake.usgs.gov/fdsnws/event/1/query?"
 
