@@ -16,7 +16,7 @@ Integrantes:
 
 # <h1 align="center">**`SISTEMA DE ALERTAS SISMICAS`**</h1>
 
-# <h1 align="center">**Bienvenidos a nuestro proyecto final de la carrera de Ciencia de Datos. En este informe encontrarán el contexto del trabajo, las temáticas que abordaremos, el planteamiento de objetivos y algunos KPIs, cada uno con un breve análisis. Es importante destacar que este informe es un primer acercamiento al tema y no representa el proyecto final, sino más bien un informe inicial que será refinado y desarrollado a lo largo de estas semanas**</h1>
+# <h1 align="center">**Bienvenidos a nuestro proyecto final de la carrera de Ciencia de Datos. En este informe encontrarán el contexto del trabajo, las temáticas que abordaremos, el planteamiento de objetivos y algunos KPIs, cada uno con un breve análisis.**</h1>
 
 
 ## **Contexto**
@@ -25,9 +25,7 @@ Los desastres naturales son eventos impredecibles que pueden resultar en un gran
 
 Particularmente, los sismos son uno de los fenómenos naturales más devastadores y peligrosos. Aunque se han logrado avances significativos en la predicción de otros desastres naturales, como huracanes y tsunamis, la capacidad predictiva de los sismos sigue siendo limitada, y su principal consecuencia es el peligro para las comunidades que se ven afectadas. Por esta razón, es crucial tener una comprensión clara de cómo se producen los sismos y cómo se pueden predecir.
 
-En este sentido, el análisis de datos desempeña un papel clave en la comprensión de los sismos y en la identificación de patrones y tendencias que pueden ayudar a predecir estos fenómenos o identificar las zonas de mayor riesgo. La recopilación y análisis de datos sísmicos, geológicos, geofísicos y geotécnicos, así como el uso de modelos matemáticos y de aprendizaje automático, pueden proporcionar información valiosa para desarrollar estrategias de prevención y mitigación de riesgos más efectivas.
-
-En definitiva, el trabajo con estos datos es fundamental para comprender mejor los sismos y para tomar medidas que permitan reducir su impacto en las personas y en las comunidades afectadas. Además, es importante que los resultados obtenidos se compartan con las autoridades, los expertos en el campo y la sociedad en general para fomentar la toma de decisiones informadas y promover la conciencia sobre la importancia de la prevención y mitigación de riesgos en las zonas sísmicas
+En este sentido, el análisis de datos desempeña un papel clave en la comprensión de los sismos y en la identificación de patrones y tendencias que pueden ayudar a identificar las zonas de mayor riesgo. La recopilación y análisis de datos sísmicos, geológicos, geofísicos y geotécnicos, así como el uso de modelos matemáticos y de aprendizaje automático, pueden proporcionar información valiosa para desarrollar estrategias de prevención y mitigación de riesgos más efectivas.
 
 ## **Presentación del trabajo**
 
@@ -123,14 +121,6 @@ Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los n
 
 Accesibilidad: Mejorar 50% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2024.
 
-Nos resulta fundamental destacar que si bien hemos planteado algunas posibles métricas, aún es temprano para decidir cuáles serán las más relevantes. Debemos recordar que todavía no disponemos de los datos definitivos, y que estamos en la etapa de análisis y exploración de los mismos.
-
-Es importante que en este momento nos enfoquemos en comprender en profundidad los datos, identificar patrones y características relevantes, y desarrollar modelos de análisis que nos permitan obtener información valiosa para la toma de decisiones.
-
-Por los mismos motivos, tampoco podemos establecer lapsos de tiempo para la implementación de los KPIs definitivos. Es importante que trabajemos en colaboración para asegurarnos de que nuestros objetivos estén claramente definidos y que nuestros esfuerzos se centren en alcanzarlos.
-
-Una vez que dispongamos de los datos definitivos y hayamos avanzado en el análisis, podremos determinar cuáles son los KPIs más relevantes y establecer un plan de acción para implementarlos de manera efectiva en nuestro sistema de alertas.
- 
  
 ### Especificaciones del resumen en formato GeoJSON
 
