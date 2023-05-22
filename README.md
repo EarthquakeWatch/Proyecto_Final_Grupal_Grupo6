@@ -118,10 +118,13 @@ Precision: Mejorar un 25% la deteccin de los sismos para el año 2024.
 
 Cobertura geográfica: Mejorar 25% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2024.
 
-Nivel de peligrosidad asignado: Mejorar la precisión de la asignación de los niveles de peligrosidad a cada sismo en un 25%, comparando los datos reales con los niveles de peligrosidad asignados por el sistema de alertas para el año 2024.
+Valoracion de usuarios: Mejorar la valoracion del BOT de alerta de 3,8 a 4,8 para el año 2024.
 
-Accesibilidad: Mejorar 50% el grado de accesibilidad a la información y el sistema de alertas para los usuarios finales para el año 2024.
+<img src="SRC_/Valoracion.JPG>
 
+Obtencion de usuarios: Obtener 100.000 usuarios para enero 2024.
+
+<img src="SRC_/usuarios.JPG">
  
 ### Especificaciones del resumen en formato GeoJSON
 
