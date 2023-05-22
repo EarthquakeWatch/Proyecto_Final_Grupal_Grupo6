@@ -16,9 +16,6 @@ Integrantes:
 
 # <h1 align="center">**`SISTEMA DE ALERTAS SISMICAS`**</h1>
 
-# <h1 align="center">**Bienvenidos a nuestro proyecto final de la carrera de Ciencia de Datos. En este informe encontrarán el contexto del trabajo, las temáticas que abordaremos, el planteamiento de objetivos y algunos KPIs, cada uno con un breve análisis.**</h1>
-
-
 ## **Contexto**
 
 Los desastres naturales son eventos impredecibles que pueden resultar en un gran número de muertes, pérdida de propiedades y daños irreparables. Por esta razón, la predicción temprana y las medidas de protección y atención apropiadas resultan urgentes para minimizar su impacto.
@@ -29,7 +26,7 @@ En este sentido, el análisis de datos desempeña un papel clave en la comprensi
 
 ## **Presentación del trabajo**
 
-Nos complace anunciar que hemos sido seleccionados para formar parte del equipo de atención de desastres de un país latinoamericano. En este momento, estamos trabajando en un emocionante proyecto tri-nacional en conjunto con los Estados Unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community. ” 
+Hemos sido seleccionados para formar parte del equipo de atención de desastres de un país latinoamericano. En este momento, estamos trabajando en un emocionante proyecto tri-nacional en conjunto con los Estados Unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community. ” 
 
 Los objetivos de esta alianza son:
 
@@ -113,7 +110,11 @@ Algunos de estos KPIS pueden ser:
 
 Tiempo de respuesta: Mejorar un 25% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2024.
 
-Tiempo de transmisión: Mejorar un 25% el tiempo desde la emisión de la alerta hasta la transmisión de la información a las autoridades correspondientes y su puesta en marcha de las acciones necesarias ppara el añ 2024.
+<img src="../DASHBOARD/SRC_/KPI/tiempo de respuesta.JPG">
+
+Precision: Mejorar un 25% la deteccin de los sismos para el año 2024.
+
+<img src="../DASHBOARD/SRC_/KPI/Precision.JPG">
 
 Cobertura geográfica: Mejorar 25% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2024.
 
