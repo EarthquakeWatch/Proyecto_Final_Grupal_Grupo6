@@ -120,7 +120,7 @@ Cobertura geográfica: Mejorar 25% la cantidad de áreas geográficas cubiertas 
 
 Valoracion de usuarios: Mejorar la valoracion del BOT de alerta de 3,8 a 4,8 para el año 2024.
 
-<img src="SRC_/Valoracion.JPG>
+<img src="SRC_/Valoracion.JPG">
 
 Obtencion de usuarios: Obtener 100.000 usuarios para enero 2024.
 
