@@ -110,11 +110,11 @@ Algunos de estos KPIS pueden ser:
 
 Tiempo de respuesta: Mejorar un 25% el tiempo que transcurre desde la detección de un sismo hasta la emisión de la alerta correspondiente para el año 2024.
 
-<img src="../SRC_/KPI/tiempo de respuesta.JPG">
+<img src="SRC_/KPI/tiempo de respuesta.JPG">
 
 Precision: Mejorar un 25% la deteccin de los sismos para el año 2024.
 
-<img src="../SRC_/KPI/Precision.JPG">
+<img src="SRC_/KPI/Precision.JPG">
 
 Cobertura geográfica: Mejorar 25% la cantidad de áreas geográficas cubiertas por el sistema de alertas de peligrosidad para el año 2024.
 
