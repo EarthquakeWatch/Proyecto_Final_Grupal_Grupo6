@@ -199,7 +199,7 @@ def sismo_usa_CSV_ETL(url, filename_csv,folder_path_CE_CSV):
     
     df_sismo.drop("geometry.coordinates", axis=1, inplace=True) 
        
-    df_sismo = df_sismo.rename(columns={'properties.mag':      'Magnituud',   
+    df_sismo = df_sismo.rename(columns={'properties.mag':      'Magnitud',
                                         'properties.place':    'Place',
                                         'properties.time':     'Fecha',  
                                         'properties.updated':  'Ultimo registro', 
