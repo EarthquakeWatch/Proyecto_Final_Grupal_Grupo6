@@ -101,7 +101,7 @@ Teniendo en cuenta todos estos factores, optamos con incorporar a Perú a nuestr
 
 
 
-## **Probables KPIs**
+## **KPIs**
 
 Como empresa nos encargamos de elaborar varios KPIS para medir la eficacia, en principio para la elaboración de nuestro proyecto y posteriormente para el seguimiento del mismo una vez puesto en marcha. No está de más volver a aclarar que ésto es solo un análisis temprano, corrrespondiente a la 
 primera visualización de los datos. 
