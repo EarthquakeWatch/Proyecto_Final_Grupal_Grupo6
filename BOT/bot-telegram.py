@@ -1,9 +1,11 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 import pandas as pd
+# Para generar valores aleatorios(Esto es de prueba, para mostrar como funciona.)
+import random
 
 chat_state = {}
-df = pd.read_csv('datos_eeuu.csv')  # Ruta y nombre de tu archivo CSV
+df = pd.read_csv('datos_eeuu.csv')
 
 
 def start(update: Update, context: CallbackContext):
@@ -12,9 +14,8 @@ def start(update: Update, context: CallbackContext):
     if chat_id not in chat_state:
         chat_state[chat_id] = {"start": False}
 
-    if not chat_state[chat_id]["start"]:
-        context.bot.send_message(chat_id=chat_id, text="¡Alerta sismos!")
-        chat_state[chat_id]["start"] = True
+    context.bot.send_message(chat_id=chat_id, text="¡Alerta sismos!")
+    chat_state[chat_id]["start"] = True
 
     peligrosidad(update, context)
     localizacion(update, context)
@@ -23,33 +24,30 @@ def start(update: Update, context: CallbackContext):
 def peligrosidad(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
 
-    if chat_id not in chat_state:
-        chat_state[chat_id] = {}
+    # Convertimos la columna 'mag' en una lista de magnitudes para luego arroje una mag aleatoria
+    magnitudes = df['mag'].tolist()
+    # Asegurar que arroje una magnitud diferente
+    magnitud = random.choice(magnitudes)
 
-    if "peligrosidad" not in chat_state[chat_id]:
-        chat_state[chat_id]["peligrosidad"] = False
+    if magnitud < 5.0:
+        nivel = "bajo"
+    elif magnitud < 7.0:
+        nivel = "mediano"
+    else:
+        nivel = "alto"
 
-    if not chat_state[chat_id]["peligrosidad"]:
-        magnitud = df['mag'][0]
-
-        if magnitud < 5.0:
-            nivel = "bajo"
-        elif magnitud < 7.0:
-            nivel = "mediano"
-        else:
-            nivel = "alto"
-
-        context.bot.send_message(
-            chat_id=chat_id, text=f"Nivel de peligrosidad: {nivel}. Magnitud del sismo: {magnitud}")
-        chat_state[chat_id]["peligrosidad"] = True
+    context.bot.send_message(
+        chat_id=chat_id, text=f"Nivel de peligrosidad: {nivel}. Magnitud del sismo: {magnitud}")
 
 
 def localizacion(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
 
-    title = df['title'][0]
-    Longitud = df['Longitud'][0]
-    Latitud = df['Latitud'][0]
+    # generamos un índice aleatorio dentro del rango válido de filas en el DataFrame.
+    random_index = random.randint(0, len(df) - 1)
+    title = df['title'][random_index]
+    Longitud = df['Longitud'][random_index]
+    Latitud = df['Latitud'][random_index]
 
     context.bot.send_message(
         chat_id=chat_id, text="Información de localización:")
@@ -62,7 +60,7 @@ def localizacion(update: Update, context: CallbackContext):
 
 def main():
     updater = Updater(
-        token="6283832471:AAGoH7EEKXw3cHs56lXegB6ZbXRLlAen09k", use_context=True)  # Reemplaza "TOKEN" por tu token de bot
+        token="6283832471:AAGoH7EEKXw3cHs56lXegB6ZbXRLlAen09k", use_context=True)
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
