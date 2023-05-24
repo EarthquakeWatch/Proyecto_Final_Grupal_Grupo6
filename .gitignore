@@ -1,0 +1,12 @@
+# Carpeta de registros de Airflow
+airflow-docker/logs
+
+# Archivos pycache generados por Python
+airflow-docker/__pycache__
+
+# Archivos de credenciales o configuraciones sensibles
+airflow-docker/.env
+
+# Carpetas de datos o archivos grandes que no deben ser rastreados
+DASHBOARD/CSV_ORIGINAL
+DASHBOARD/CSV_TRANSFORMADOS
