@@ -26,7 +26,7 @@ En este sentido, el análisis de datos desempeña un papel clave en la comprensi
 
 ## **Presentación del trabajo**
 
-Hemos sido seleccionados para formar parte del equipo de atención de desastres de un país latinoamericano. En este momento, estamos trabajando en un emocionante proyecto tri-nacional en conjunto con los Estados Unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community. ” 
+Hemos sido seleccionados para formar parte del equipo de atención de desastres de un país latinoamericano. En este momento, estamos trabajando en un proyecto tri-nacional en conjunto con los Estados Unidos (USGS) y Japón (JMA) llamado “Working towards global standardization of seismological networks and effective communication to the civilian community. ” 
 
 Los objetivos de esta alianza son:
 
@@ -44,7 +44,7 @@ Estamos emocionados de participar en este proyecto y contribuir a la prevención
 
 ## **Objetivos**
 
-Como ya hemos mencionado anteriormente, nuestro trabajo tiene como objetivo principal crear una base de datos depurada y estandarizada de sismos en conjunto con Estados Unidos y Japón para el país latinoamericano elegido. Para ello, implementaremos una serie de acciones concretas que nos permitan alcanzar las siguientes metas:
+Nuestro trabajo tiene como objetivo principal crear una base de datos depurada y estandarizada de sismos en conjunto con Estados Unidos y Japón para el país latinoamericano elegido. Para ello, implementaremos una serie de acciones concretas que nos permitan alcanzar las siguientes metas:
 
 1.Desarrollar una base de datos completa, que recoja y clasifique de manera estandarizada todos los datos relacionados con los sismos que ocurran en el país elegido.
 
@@ -197,97 +197,67 @@ Uso: El objetivo de GeoJSON es servir como interfaz programática en diversas ap
   
 A continuación se muestra la lista de todas las variables que obtenemos de las API de USGS. 
  
-** mag ** 
- 
-- Tipo de datos: float
- 
+## mag  
+  
 - Descripción: La magnitud del evento. 
  
-** place ** 
- 
-- Tipo de datos: object
+## place
  
 - Descripción: Descripción textual de la región geográfica nombrada cercana al evento. 
  
-** time ** 
- 
-- Tipo de datos: object
+## time
  
 - Descripción: Hora en que ocurrió el evento. Indicamos la fecha y hora en que el sismo inicia la ruptura, lo que se conoce como hora "origen". 
  
-** updated **   
- 
-- Tipo de datos: object 
+## updated
  
 - Descripción: Hora en que se actualizó el evento por última vez.
   
-** cdi **
-  
-- Tipo de datos: float
+## cdi
 
 - Descripción: La máxima intensidad reportada para el evento.  
  
-** status ** 
- 
-- Tipo de datos: object 
- 
+## status 
+
 - Descripción: Indica si el evento ha sido revisado por un humano.
  
-** tsunami ** 
- 
-- Tipo de datos: int 
+## tsunami 
 
 - Descripción: Indica la posivilidad de tsunami, se representa con 1 cuando hay posivilidad y 0 cuando no. 
  
-** sig ** 
- 
-- Tipo de datos: int 
+## sig 
  
 - Descripcion: Un número que describe cuán significativo es el evento. Los números más grandes indican un evento más significativo. Este valor se determina en función de una serie de factores, que incluyen: magnitud, MMI máximo, informes de sensación e impacto estimado. 
  
-** nst ** 
- 
-- Tipo de datos: float
+## nst 
    
 - Descripción: El número total de estaciones sísmicas utilizadas para determinar la ubicación del terremoto.
 
-** dmin **  
- 
-- Tipo de datos: float
+## dmin 
    
 - Descripción: Distancia horizontal desde el epicentro hasta la estación más cercana, cuanto menor sea este número, más confiable es la profundidad calculada del terremoto. 
  
-** rms ** 
- 
-- Tipo de datos: float
+## rms 
    
 - Descripción: Este parámetro proporciona una medida del ajuste de los tiempos de llegada observados a los tiempos de llegada previstos para esta ubicación. Los números más pequeños reflejan un mejor ajuste de los datos. El valor depende de la precisión del modelo de velocidad utilizado para calcular la ubicación del terremoto, los pesos de calidad asignados a los datos de tiempo de llegada y el procedimiento utilizado para localizar el terremoto.  
  
-** gap **   
- 
-- Tipo de datos: float 
+## gap 
  
 - Descripción: La mayor brecha azimutal entre estaciones azimutalmente adyacentes (en grados). En general, cuanto más pequeño es este número, más confiable es la posición horizontal calculada del terremoto. Las ubicaciones de terremotos en las que la brecha azimutal supera los 180 grados suelen tener grandes incertidumbres de ubicación y profundidad. 
  
-** Longitud **  
- 
-- Tipo de datos: float 
+## Longitud  
  
 - Descripción: Grados decimales de longitud. Valores negativos para longitudes occidentales.
    
 - Información adicional: Un terremoto comienza a romperse en un hipocentro que está definido por una posición en la superficie de la tierra (epicentro) y una profundidad por debajo de este punto (profundidad focal). Proporcionamos las coordenadas del epicentro en unidades de latitud y longitud. La latitud es el número de grados al norte (N) o al sur (S) del ecuador y varía de 0 en el ecuador a 90 en los polos. La longitud es el número de grados al este (E) o al oeste (O) del primer meridiano que pasa por Greenwich, Inglaterra. La longitud varía de 0 en Greenwich a 180 y el E o W muestra la dirección desde Greenwich. Las coordenadas se dan en el marco de referencia WGS84. La incertidumbre de la posición del hipocentro varía desde aproximadamente 100 m en horizontal y 300 metros en vertical para los eventos mejor ubicados, aquellos en medio de redes de sismógrafos densamente espaciadas, hasta decenas de kilómetros para eventos globales en muchas partes del mundo.  
  
-** Latitud ** 
- 
-- Tipo de datos: float 
- 
+## Latitud 
+  
 - Descripción :Grados decimales de latitud. Valores negativos para latitudes del sur.
    
 - Información adicional: Un terremoto comienza a romperse en un hipocentro que está definido por una posición en la superficie de la tierra (epicentro) y una profundidad por debajo de este punto (profundidad focal). Proporcionamos las coordenadas del epicentro en unidades de latitud y longitud. La latitud es el número de grados al norte (N) o al sur (S) del ecuador y varía de 0 en el ecuador a 90 en los polos. La longitud es el número de grados al este (E) o al oeste (O) del primer meridiano que pasa por Greenwich, Inglaterra. La longitud varía de 0 en Greenwich a 180 y el E o W muestra la dirección desde Greenwich. Las coordenadas se dan en el marco de referencia WGS84. La incertidumbre de la posición del hipocentro varía desde aproximadamente 100 m en horizontal y 300 metros en vertical para los eventos mejor ubicados, aquellos en medio de redes de sismógrafos densamente espaciadas, hasta decenas de kilómetros para eventos globales en muchas partes del mundo. 
  
-** profundidad **  
- 
-- Tipo de dato: float 
+## profundidad  
  
 - Descripción :Profundidad del evento en kilómetros.
  
